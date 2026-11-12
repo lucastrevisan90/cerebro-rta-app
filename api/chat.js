@@ -49,8 +49,8 @@ module.exports = async (req, res) => {
 Sua missão é responder com precisão, clareza e tom executivo a diretores, gestores e colaboradores da RTA Engenharia sobre os diagnósticos, dores levantadas, planos de ação, processos operacionais, integrações sistêmicas (Omie, Cobli, SEI) e entregáveis contratuais.
 
 DIRETRIZES DE RESPOSTA:
-- NUNCA fique citando nomes técnicos de arquivos internos como "v122 de 1124 páginas", "v120", a menos que o usuário pergunte expressamente sobre uma versão de documento.
 - Fale com autoridade sobre as soluções da Tscope, melhorias operacionais, automações e benefícios para cada setor.
+- NUNCA mencione nomes de arquivos internos como "v122 de 1124 páginas", "v120" a menos que expressamente solicitado.
 - Seja objetivo, estruturado (use tópicos e negritos) e forneça respostas práticas para o dia a dia do colaborador.
 
 BASE DE CONHECIMENTO DO PROJETO RTA:
@@ -62,7 +62,12 @@ ${JSON.stringify({
 }, null, 1)}
 `;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
+    const candidateModels = [
+      'gemini-1.5-flash-8b',
+      'gemini-1.5-pro',
+      'gemini-pro',
+      'gemini-1.0-pro'
+    ];
 
     const contents = [
       {
@@ -89,32 +94,71 @@ ${JSON.stringify({
       parts: [{ text: message }]
     });
 
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: contents,
-        generationConfig: { temperature: 0.2, maxOutputTokens: 2048 }
-      })
+    const payload = JSON.stringify({
+      contents: contents,
+      generationConfig: { temperature: 0.2, maxOutputTokens: 2048 }
     });
 
-    let data = await response.json();
+    let reply = null;
+    let lastError = null;
 
-    if (!response.ok && data.error?.message?.includes('not found')) {
-      const fallbackEndpoint = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-      const fbResponse = await fetch(fallbackEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contents, generationConfig: { temperature: 0.2, maxOutputTokens: 2048 } })
+    try {
+      const listResp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+      if (listResp.ok) {
+        const listData = await listResp.json();
+        const available = (listData.models || [])
+          .filter(m => m.supportedGenerationMethods?.includes('generateContent'))
+          .map(m => m.name.replace('models/', ''));
+
+        for (const mName of available) {
+          const ep = `https://generativelanguage.googleapis.com/v1beta/models/${mName}:generateContent?key=${apiKey}`;
+          const r = await fetch(ep, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: payload
+          });
+          const resJson = await r.json();
+          if (r.ok && resJson.candidates?.[0]?.content?.parts?.[0]?.text) {
+            reply = resJson.candidates[0].content.parts[0].text;
+            break;
+          }
+        }
+      }
+    } catch (e) {
+      console.error("Erro ao listar modelos:", e);
+    }
+
+    if (!reply) {
+      for (const m of candidateModels) {
+        for (const v of ['v1beta', 'v1']) {
+          const ep = `https://generativelanguage.googleapis.com/${v}/models/${m}:generateContent?key=${apiKey}`;
+          try {
+            const r = await fetch(ep, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: payload
+            });
+            const resJson = await r.json();
+            if (r.ok && resJson.candidates?.[0]?.content?.parts?.[0]?.text) {
+              reply = resJson.candidates[0].content.parts[0].text;
+              break;
+            } else if (resJson.error) {
+              lastError = resJson.error.message;
+            }
+          } catch (err) {
+            lastError = err.message;
+          }
+        }
+        if (reply) break;
+      }
+    }
+
+    if (!reply) {
+      return res.status(500).json({
+        error: `Não foi possível gerar conteúdo. Verifique se a chave de API tem permissão de generateContent no Google AI Studio. Detalhe: ${lastError}`
       });
-      data = await fbResponse.json();
     }
 
-    if (data.error) {
-      return res.status(500).json({ error: data.error.message });
-    }
-
-    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "Não foi possível gerar uma resposta para esta solicitação.";
     return res.status(200).json({ reply });
   } catch (error) {
     console.error("Erro interno:", error);
