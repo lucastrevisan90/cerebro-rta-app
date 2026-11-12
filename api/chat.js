@@ -45,15 +45,17 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const systemPrompt = `Você é o Assistente Especialista Oficial do Projeto RTA, desenvolvido pela consultoria Tscope.
-Sua missão é responder com precisão, clareza e tom executivo a diretores, gestores e colaboradores da RTA Engenharia sobre os diagnósticos, dores levantadas, planos de ação, processos operacionais, integrações sistêmicas (Omie, Cobli, SEI) e entregáveis contratuais.
+    const systemPrompt = `Você é o Cérebro Digital do Projeto RTA, assistente inteligente desenvolvido pela consultoria Tscope para a RTA Engenharia.
+Responda diretamente ao usuário em português brasileiro.
 
-DIRETRIZES DE RESPOSTA:
-- Fale com autoridade sobre as soluções da Tscope, melhorias operacionais, automações e benefícios para cada setor.
-- NUNCA mencione nomes de arquivos internos como "v122 de 1124 páginas", "v120" a menos que expressamente solicitado.
-- Seja objetivo, estruturado (use tópicos e negritos) e forneça respostas práticas para o dia a dia do colaborador.
+REGRAS OBRIGATÓRIAS:
+- NUNCA mostre raciocínio em inglês, chain-of-thought, anotações de planejamento ou meta-comentários como "User says...", "Context...", "Goal...".
+- Entregue SEMPRE E APENAS a resposta final direta ao colaborador ou diretor.
+- Responda em tom executivo, cordial, prestativo e profissional.
+- Se o usuário disser apenas uma saudação (como "Boa noite", "Olá", "Tudo bem?"), cumprimente-o cordialmente em português e se coloque à disposição para tirar dúvidas sobre o projeto RTA, processos, automações, Omie, Cobli, etc.
+- Baseie suas respostas nas informações do projeto: 26 departamentos/contratos, 225 processos mapeados, 18 cadernos departamentais, Marcos Comerciais G01-G10 e Técnicos M01-M18.
 
-BASE DE CONHECIMENTO DO PROJETO RTA:
+BASE DO PROJETO RTA:
 ${JSON.stringify({
   marcos_comerciais: knowledgeBase ? knowledgeBase.marcos_comerciais : {},
   marcos_tecnicos: knowledgeBase ? knowledgeBase.marcos_tecnicos : {},
@@ -69,16 +71,7 @@ ${JSON.stringify({
       'gemini-1.0-pro'
     ];
 
-    const contents = [
-      {
-        role: "user",
-        parts: [{ text: systemPrompt + "\n\nResponda confirmando que entendeu sua função de forma sucinta." }]
-      },
-      {
-        role: "model",
-        parts: [{ text: "Entendido perfeitamente. Sou o assistente especialista do Projeto RTA, pronto para esclarecer dúvidas sobre processos, automações, departamentos e entregas da Tscope." }]
-      }
-    ];
+    const contents = [];
 
     if (Array.isArray(history)) {
       history.slice(-6).forEach(h => {
@@ -95,8 +88,14 @@ ${JSON.stringify({
     });
 
     const payload = JSON.stringify({
+      systemInstruction: {
+        parts: [{ text: systemPrompt }]
+      },
       contents: contents,
-      generationConfig: { temperature: 0.2, maxOutputTokens: 2048 }
+      generationConfig: {
+        temperature: 0.3,
+        maxOutputTokens: 2048
+      }
     });
 
     let reply = null;
@@ -110,7 +109,13 @@ ${JSON.stringify({
           .filter(m => m.supportedGenerationMethods?.includes('generateContent'))
           .map(m => m.name.replace('models/', ''));
 
-        for (const mName of available) {
+        const prioritized = available.sort((a, b) => {
+          if (a.includes('flash') && !b.includes('flash')) return -1;
+          if (!a.includes('flash') && b.includes('flash')) return 1;
+          return 0;
+        });
+
+        for (const mName of prioritized) {
           const ep = `https://generativelanguage.googleapis.com/v1beta/models/${mName}:generateContent?key=${apiKey}`;
           const r = await fetch(ep, {
             method: 'POST',
@@ -118,9 +123,13 @@ ${JSON.stringify({
             body: payload
           });
           const resJson = await r.json();
-          if (r.ok && resJson.candidates?.[0]?.content?.parts?.[0]?.text) {
-            reply = resJson.candidates[0].content.parts[0].text;
-            break;
+          if (r.ok && resJson.candidates?.[0]?.content?.parts) {
+            const parts = resJson.candidates[0].content.parts;
+            const textPart = parts.reverse().find(p => p.text && !p.thought);
+            if (textPart && textPart.text) {
+              reply = textPart.text.trim();
+              break;
+            }
           }
         }
       }
@@ -139,9 +148,13 @@ ${JSON.stringify({
               body: payload
             });
             const resJson = await r.json();
-            if (r.ok && resJson.candidates?.[0]?.content?.parts?.[0]?.text) {
-              reply = resJson.candidates[0].content.parts[0].text;
-              break;
+            if (r.ok && resJson.candidates?.[0]?.content?.parts) {
+              const parts = resJson.candidates[0].content.parts;
+              const textPart = parts.reverse().find(p => p.text && !p.thought);
+              if (textPart && textPart.text) {
+                reply = textPart.text.trim();
+                break;
+              }
             } else if (resJson.error) {
               lastError = resJson.error.message;
             }
@@ -155,8 +168,15 @@ ${JSON.stringify({
 
     if (!reply) {
       return res.status(500).json({
-        error: `Não foi possível gerar conteúdo. Verifique se a chave de API tem permissão de generateContent no Google AI Studio. Detalhe: ${lastError}`
+        error: `Não foi possível gerar conteúdo. Detalhe: ${lastError}`
       });
+    }
+
+    if (reply.startsWith('- User says:') || reply.startsWith('* User says:')) {
+      const splitIdx = reply.indexOf('\n\n');
+      if (splitIdx !== -1) {
+        reply = reply.substring(splitIdx).trim();
+      }
     }
 
     return res.status(200).json({ reply });
