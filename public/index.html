@@ -14,6 +14,7 @@
             --primary: #2563EB;
             --primary-glow: rgba(37, 99, 235, 0.35);
             --accent: #10B981;
+            --danger: #EF4444;
             --text-main: #F8FAFC;
             --text-muted: #94A3B8;
             --border-glass: rgba(255, 255, 255, 0.08);
@@ -141,9 +142,9 @@
         .context-stat {
             display: flex;
             justify-content: space-between;
-            padding: 8px 0;
+            padding: 10px 0;
             border-bottom: 1px solid rgba(255,255,255,0.05);
-            font-size: 13px;
+            font-size: 13.5px;
         }
         .context-stat:last-child { border-bottom: none; }
         .context-stat span:first-child { color: var(--text-muted); }
@@ -278,6 +279,7 @@
             align-items: center;
             box-shadow: 0 4px 20px rgba(0,0,0,0.25);
             transition: all 0.2s ease;
+            gap: 10px;
         }
 
         .input-wrapper:focus-within {
@@ -299,11 +301,9 @@
             color: var(--text-muted);
         }
 
-        .send-btn {
-            background: #2563EB;
-            color: #FFFFFF;
+        .action-btn {
             border: none;
-            padding: 10px 20px;
+            padding: 10px 18px;
             border-radius: 10px;
             font-weight: 700;
             font-size: 13.5px;
@@ -314,12 +314,30 @@
             gap: 6px;
         }
 
+        .send-btn {
+            background: #2563EB;
+            color: #FFFFFF;
+        }
+
         .send-btn:hover {
             background: #1D4ED8;
             transform: scale(1.02);
         }
 
-        .send-btn:disabled {
+        .abort-btn {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            color: #FCA5A5;
+            display: none;
+        }
+
+        .abort-btn:hover {
+            background: #EF4444;
+            color: #FFFFFF;
+            transform: scale(1.02);
+        }
+
+        .action-btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
         }
@@ -379,18 +397,6 @@
                     <span>Processos Catalogados:</span>
                     <span>225 rotinas</span>
                 </div>
-                <div class="context-stat">
-                    <span>Cadernos de Entregas:</span>
-                    <span>18 cadernos</span>
-                </div>
-                <div class="context-stat">
-                    <span>Marcos Comerciais:</span>
-                    <span>G01 a G10</span>
-                </div>
-                <div class="context-stat">
-                    <span>Marcos Técnicos:</span>
-                    <span>M01 a M18</span>
-                </div>
             </div>
 
             <div class="context-box">
@@ -420,9 +426,13 @@
             <div class="input-bar-container">
                 <div class="input-wrapper">
                     <input type="text" id="userInput" placeholder="Digite sua pergunta sobre processos, departamentos ou entregas..." onkeydown="handleKey(event)">
-                    <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+                    <button class="action-btn send-btn" id="sendBtn" onclick="sendMessage()">
                         <span>Enviar</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                    <button class="action-btn abort-btn" id="abortBtn" onclick="abortRequest()">
+                        <span>Parar</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"></rect></svg>
                     </button>
                 </div>
             </div>
@@ -433,7 +443,9 @@
         const chatBox = document.getElementById('chatBox');
         const userInput = document.getElementById('userInput');
         const sendBtn = document.getElementById('sendBtn');
+        const abortBtn = document.getElementById('abortBtn');
         let chatHistory = [];
+        let currentAbortController = null;
 
         function appendMessage(role, text) {
             const row = document.createElement('div');
@@ -483,21 +495,46 @@
             });
         }
 
+        function setGenerating(isGenerating) {
+            if (isGenerating) {
+                sendBtn.style.display = 'none';
+                abortBtn.style.display = 'flex';
+                userInput.disabled = true;
+            } else {
+                sendBtn.style.display = 'flex';
+                abortBtn.style.display = 'none';
+                userInput.disabled = false;
+                userInput.focus();
+                currentAbortController = null;
+            }
+        }
+
+        function abortRequest() {
+            if (currentAbortController) {
+                currentAbortController.abort();
+                currentAbortController = null;
+                hideTyping();
+                appendMessage('bot', '_Resposta cancelada pelo usuário._');
+                setGenerating(false);
+            }
+        }
+
         async function sendMessage() {
             const text = userInput.value.trim();
             if (!text) return;
 
             appendMessage('user', text);
             userInput.value = '';
-            userInput.disabled = true;
-            sendBtn.disabled = true;
-
+            setGenerating(true);
             showTyping();
+
+            currentAbortController = new AbortController();
 
             try {
                 const res = await fetch('/api/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
+                    signal: currentAbortController.signal,
                     body: JSON.stringify({
                         message: text,
                         history: chatHistory
@@ -516,11 +553,13 @@
                 }
             } catch (err) {
                 hideTyping();
+                if (err.name === 'AbortError') {
+                    // Abortado intencionalmente
+                    return;
+                }
                 appendMessage('bot', '⚠️ **Erro de conexão:** ' + err.message);
             } finally {
-                userInput.disabled = false;
-                sendBtn.disabled = false;
-                userInput.focus();
+                setGenerating(false);
             }
         }
 
