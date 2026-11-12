@@ -1,13 +1,6 @@
 {
   "name": "cerebro-projeto-rta",
   "version": "1.0.0",
-  "description": "IA Interativa Especialista no Projeto de Diagnóstico e Automação RTA - Tscope (Gemini 1.5 Flash)",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "@google/genai": "^0.1.2"
-  }
+  "description": "IA Interativa Especialista no Projeto de Diagnostico e Automacao RTA - Tscope (Gemini 1.5 Flash)",
+  "dependencies": {}
 }
-
