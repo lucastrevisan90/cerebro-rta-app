@@ -1,0 +1,3723 @@
+{
+  "marcos_comerciais": {
+    "G01": {
+      "codigo": "G01",
+      "nome": "Financeiro, contábil e fiscal",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M04"
+      ],
+      "departamentos": [
+        "Financeiro, Contas a Pagar"
+      ]
+    },
+    "G02": {
+      "codigo": "G02",
+      "nome": "Compras, suprimentos e administrativo",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M03",
+        "M05"
+      ],
+      "departamentos": [
+        "Compras",
+        "Secretaria, Geral"
+      ]
+    },
+    "G03": {
+      "codigo": "G03",
+      "nome": "Frota e patrimônio",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M06"
+      ],
+      "departamentos": [
+        "Frota, Gestão de Patrimônio"
+      ]
+    },
+    "G04": {
+      "codigo": "G04",
+      "nome": "Gestão de contratos",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M07"
+      ],
+      "departamentos": [
+        "Gestão de Contratos"
+      ]
+    },
+    "G05": {
+      "codigo": "G05",
+      "nome": "Recursos Humanos e gestão de pessoas",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M08"
+      ],
+      "departamentos": [
+        "Recursos Humanos"
+      ]
+    },
+    "G06": {
+      "codigo": "G06",
+      "nome": "Licitações e acervo técnico",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M02"
+      ],
+      "departamentos": [
+        "Licitação"
+      ]
+    },
+    "G07": {
+      "codigo": "G07",
+      "nome": "Engenharia, projetos e áreas técnicas",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M09",
+        "M10",
+        "M11",
+        "M12"
+      ],
+      "departamentos": [
+        "Ambiental",
+        "Controle tecnológico, Laboratório",
+        "Escritório de Projetos, Intervia",
+        "Verificador Independente"
+      ]
+    },
+    "G08": {
+      "codigo": "G08",
+      "nome": "Contratos e operações regionais - grupo 1",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M13",
+        "M14"
+      ],
+      "departamentos": [
+        "AGETO, 3S",
+        "SINFRA, AGEHAB"
+      ]
+    },
+    "G09": {
+      "codigo": "G09",
+      "nome": "Contratos e operações regionais - grupo 2",
+      "valor": "R$ 29.908,91",
+      "marcos_tecnicos": [
+        "M15",
+        "M16",
+        "M17",
+        "M18"
+      ],
+      "departamentos": [
+        "DNIT-GO",
+        "DNIT-MT",
+        "SEDUC",
+        "SEOSP, DER-MG"
+      ]
+    },
+    "G10": {
+      "codigo": "G10",
+      "nome": "Governança, segurança e visão executiva",
+      "valor": "R$ 29.908,93",
+      "marcos_tecnicos": [
+        "M01"
+      ],
+      "departamentos": [
+        "TI"
+      ]
+    }
+  },
+  "marcos_tecnicos": {
+    "M04": {
+      "codigo": "M04",
+      "nome": "Financeiro, contábil e contas a pagar",
+      "marco_comercial": "G01",
+      "departamento": "Financeiro, Contas a Pagar",
+      "servicos": [
+        "Entrada e validação documental.",
+        "Conferência de lançamentos.",
+        "Contas a pagar por natureza.",
+        "Integração e rastreabilidade."
+      ],
+      "processos": [
+        "P01-24",
+        "P01-53",
+        "P01-54",
+        "P01-55",
+        "P01-82",
+        "P02-24",
+        "P02-53",
+        "P02-54",
+        "P02-55",
+        "P02-82",
+        "P03-24",
+        "P03-54"
+      ]
+    },
+    "M03": {
+      "codigo": "M03",
+      "nome": "Compras e suprimentos",
+      "marco_comercial": "G02",
+      "departamento": "Compras",
+      "servicos": [
+        "Requisição padronizada.",
+        "Cotação comparável.",
+        "Alçadas e ordem de compra.",
+        "Entrega e cadastro para faturamento."
+      ],
+      "processos": [
+        "P01-80",
+        "P02-80",
+        "P03-80",
+        "P04-80",
+        "P05-80",
+        "P06-80"
+      ]
+    },
+    "M05": {
+      "codigo": "M05",
+      "nome": "Secretaria e apoio administrativo",
+      "marco_comercial": "G02",
+      "departamento": "Secretaria, Geral",
+      "servicos": [
+        "Documentos e requisições.",
+        "Rotinas de apoio.",
+        "Interface com pessoas e benefícios.",
+        "Medição e faturamento administrativo."
+      ],
+      "processos": [
+        "P01-26",
+        "P01-78",
+        "P02-78",
+        "P03-78",
+        "P04-24",
+        "P04-78",
+        "P05-24",
+        "P06-24",
+        "P07-24",
+        "P08-24",
+        "P09-24",
+        "P10-24",
+        "P11-24"
+      ]
+    },
+    "M06": {
+      "codigo": "M06",
+      "nome": "Frota e patrimônio",
+      "marco_comercial": "G03",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "servicos": [
+        "Cadastro e tombamento.",
+        "Inventário e movimentação.",
+        "Frota e manutenção.",
+        "Custos e ciclo do ativo."
+      ],
+      "processos": [
+        "P01-85",
+        "P02-85",
+        "P03-85",
+        "P04-85",
+        "P05-85",
+        "P06-85",
+        "P59-85",
+        "P60-85",
+        "P61-85",
+        "P62-85"
+      ]
+    },
+    "M07": {
+      "codigo": "M07",
+      "nome": "Gestão de contratos",
+      "marco_comercial": "G04",
+      "departamento": "Gestão de Contratos",
+      "servicos": [
+        "Medição e faturamento.",
+        "Instrumentos e assinaturas.",
+        "Seguros e garantias.",
+        "Controladoria do contrato."
+      ],
+      "processos": [
+        "P01-33",
+        "P01-34",
+        "P01-35",
+        "P01-36",
+        "P01-81",
+        "P02-33",
+        "P02-34",
+        "P02-35",
+        "P02-36",
+        "P02-81",
+        "P03-33",
+        "P03-34",
+        "P03-35",
+        "P03-36",
+        "P04-34",
+        "P04-35",
+        "P04-36",
+        "P05-34",
+        "P05-35",
+        "P05-36",
+        "P06-35",
+        "P06-36",
+        "P07-35",
+        "P07-36",
+        "P08-35",
+        "P08-36",
+        "P09-35"
+      ]
+    },
+    "M08": {
+      "codigo": "M08",
+      "nome": "Recursos Humanos",
+      "marco_comercial": "G05",
+      "departamento": "Recursos Humanos",
+      "servicos": [
+        "Entrada e integração.",
+        "Vida funcional e benefícios.",
+        "Ponto e fechamento.",
+        "Autoatendimento e saída."
+      ],
+      "processos": [
+        "RH-01",
+        "RH-02",
+        "RH-03",
+        "RH-04",
+        "RH-05",
+        "RH-06",
+        "RH-07",
+        "RH-08",
+        "RH-09",
+        "RH-10",
+        "RH-11",
+        "RH-12"
+      ]
+    },
+    "M02": {
+      "codigo": "M02",
+      "nome": "Licitações e acervo técnico",
+      "marco_comercial": "G06",
+      "departamento": "Licitação",
+      "servicos": [
+        "Triagem e viabilidade.",
+        "Habilitação e acervo.",
+        "Regularidade e vencimentos.",
+        "Sessões e decisões."
+      ],
+      "processos": [
+        "P01-75",
+        "P02-75",
+        "P03-75",
+        "P04-75",
+        "P05-75"
+      ]
+    },
+    "M09": {
+      "codigo": "M09",
+      "nome": "Gestão ambiental",
+      "marco_comercial": "G07",
+      "departamento": "Ambiental",
+      "servicos": [
+        "Demanda e planejamento.",
+        "Campo e geoprocessamento.",
+        "Estudos e documentação.",
+        "Obrigações e interfaces."
+      ],
+      "processos": [
+        "P01-32",
+        "P02-32",
+        "P03-32",
+        "P04-32",
+        "P05-32",
+        "P06-32",
+        "P07-32",
+        "P08-32",
+        "P09-32",
+        "P10-32",
+        "P11-32",
+        "P12-32",
+        "P13-32",
+        "P14-32",
+        "P15-32",
+        "P16-32",
+        "P50-85",
+        "P51-85",
+        "P52-85",
+        "P53-85",
+        "P54-85",
+        "P55-85",
+        "P56-85",
+        "P57-85",
+        "P58-85"
+      ]
+    },
+    "M10": {
+      "codigo": "M10",
+      "nome": "Controle tecnológico e laboratório",
+      "marco_comercial": "G07",
+      "departamento": "Controle tecnológico, Laboratório",
+      "servicos": [
+        "Planejamento e amostragem.",
+        "Coleta e resultados.",
+        "Triagem e relatório.",
+        "Apoio às propostas técnicas."
+      ],
+      "processos": [
+        "P01-42",
+        "P01-50",
+        "P02-42",
+        "P02-50",
+        "P03-42",
+        "P03-50",
+        "P03-75",
+        "P04-42",
+        "P04-50",
+        "P04-75"
+      ]
+    },
+    "M11": {
+      "codigo": "M11",
+      "nome": "Escritório de Projetos e Intervia",
+      "marco_comercial": "G07",
+      "departamento": "Escritório de Projetos, Intervia",
+      "servicos": [
+        "Intervia e inspeções de OAEs.",
+        "Dados e produtividade.",
+        "Rotinas de projetos.",
+        "Campo e peças técnicas."
+      ],
+      "processos": [
+        "ESC-PROJ-01",
+        "ESC-PROJ-02",
+        "ESC-PROJ-03",
+        "ESC-PROJ-04",
+        "ESC-PROJ-05",
+        "ESC-PROJ-06",
+        "ESC-PROJ-07",
+        "ESC-PROJ-08",
+        "ESC-PROJ-09",
+        "P01-76",
+        "P02-76",
+        "P03-76",
+        "P04-76",
+        "P05-76"
+      ]
+    },
+    "M12": {
+      "codigo": "M12",
+      "nome": "Verificação independente",
+      "marco_comercial": "G07",
+      "departamento": "Verificador Independente",
+      "servicos": [
+        "Demandas e análise técnica.",
+        "Planejamento e inspeção.",
+        "Continuidade das evidências.",
+        "Auditoria e consolidação."
+      ],
+      "processos": [
+        "P01-SINFRA-VI",
+        "P01-VI-CAMPO",
+        "P02-SINFRA-VI",
+        "P02-VI-CAMPO",
+        "P03-SINFRA-VI",
+        "P03-VI-CAMPO",
+        "P04-SINFRA-VI",
+        "P04-VI-CAMPO",
+        "P05-SINFRA-VI",
+        "P05-VI-CAMPO",
+        "P06-VI-CAMPO"
+      ]
+    },
+    "M13": {
+      "codigo": "M13",
+      "nome": "SINFRA e AGEHAB",
+      "marco_comercial": "G08",
+      "departamento": "SINFRA, AGEHAB",
+      "servicos": [
+        "SINFRA e coordenação.",
+        "Dados rodoviários.",
+        "Bases de planejamento.",
+        "AGEHAB e obras habitacionais."
+      ],
+      "processos": [
+        "P01-12",
+        "P01-14",
+        "P01-15",
+        "P01-16",
+        "P01-17",
+        "P01-18",
+        "P01-19",
+        "P01-20",
+        "P01-47",
+        "P02-16",
+        "P02-17",
+        "P02-18",
+        "P02-19",
+        "P02-20",
+        "P02-47",
+        "P03-16",
+        "P03-17",
+        "P03-18",
+        "P04-47",
+        "P05-47"
+      ]
+    },
+    "M14": {
+      "codigo": "M14",
+      "nome": "AGETO e Consórcio 3S",
+      "marco_comercial": "G08",
+      "departamento": "AGETO, 3S",
+      "servicos": [
+        "Produtos AGETO.",
+        "Geoportal e controladoria.",
+        "Projetos e análises do 3S.",
+        "Consolidação contratual."
+      ],
+      "processos": [
+        "3S-01",
+        "3S-02",
+        "3S-03",
+        "3S-04",
+        "3S-05",
+        "3S-06",
+        "3S-07",
+        "3S-08",
+        "3S-09",
+        "3S-10",
+        "AGETO-01",
+        "AGETO-02",
+        "AGETO-03",
+        "AGETO-04",
+        "AGETO-05",
+        "AGETO-06",
+        "AGETO-07",
+        "AGETO-08",
+        "AGETO-09"
+      ]
+    },
+    "M15": {
+      "codigo": "M15",
+      "nome": "DNIT-MT",
+      "marco_comercial": "G09",
+      "departamento": "DNIT-MT",
+      "servicos": [
+        "Gestão e Produto 1.",
+        "Evolução física e financeira.",
+        "Ensaios e ICM.",
+        "Ocorrências e conformidade."
+      ],
+      "processos": [
+        "DNIT-MT-01",
+        "DNIT-MT-02",
+        "DNIT-MT-03",
+        "DNIT-MT-04",
+        "DNIT-MT-05",
+        "DNIT-MT-06",
+        "DNIT-MT-07"
+      ]
+    },
+    "M16": {
+      "codigo": "M16",
+      "nome": "DNIT-GO",
+      "marco_comercial": "G09",
+      "departamento": "DNIT-GO",
+      "servicos": [
+        "Coordenação e manutenção.",
+        "Ambiental e tecnologia.",
+        "Planejamento e operação.",
+        "Comunicação e suporte."
+      ],
+      "processos": [
+        "DNIT-GO-01",
+        "DNIT-GO-02",
+        "DNIT-GO-03",
+        "DNIT-GO-04",
+        "DNIT-GO-05",
+        "DNIT-GO-06",
+        "DNIT-GO-07",
+        "DNIT-GO-08",
+        "DNIT-GO-09",
+        "DNIT-GO-10",
+        "DNIT-GO-11"
+      ]
+    },
+    "M17": {
+      "codigo": "M17",
+      "nome": "SEOSP e DER-MG",
+      "marco_comercial": "G09",
+      "departamento": "SEOSP, DER-MG",
+      "servicos": [
+        "SEOSP e base de obras.",
+        "Produtos SEOSP.",
+        "Campo DER-MG.",
+        "Planejamento e gestão DER-MG."
+      ],
+      "processos": [
+        "DER-MG-01",
+        "DER-MG-02",
+        "DER-MG-03",
+        "DER-MG-04",
+        "DER-MG-05",
+        "SEOSP-01",
+        "SEOSP-02",
+        "SEOSP-03",
+        "SEOSP-04",
+        "SEOSP-05",
+        "SEOSP-06",
+        "SEOSP-07",
+        "SEOSP-08"
+      ]
+    },
+    "M18": {
+      "codigo": "M18",
+      "nome": "SEDUC",
+      "marco_comercial": "G09",
+      "departamento": "SEDUC",
+      "servicos": [
+        "Orçamento e demandas.",
+        "Campo e priorização.",
+        "Controles especializados.",
+        "Instrução e revisão contratual."
+      ],
+      "processos": [
+        "SEDUC-01",
+        "SEDUC-02",
+        "SEDUC-03",
+        "SEDUC-04",
+        "SEDUC-05",
+        "SEDUC-06",
+        "SEDUC-07"
+      ]
+    },
+    "M01": {
+      "codigo": "M01",
+      "nome": "Governança tecnológica e segurança",
+      "marco_comercial": "G10",
+      "departamento": "TI",
+      "servicos": [
+        "Acompanhamento da infraestrutura.",
+        "Atendimento e chamados.",
+        "Inventário de TI.",
+        "Governança inicial compartilhada."
+      ],
+      "processos": [
+        "P01-79",
+        "P02-79",
+        "P03-79"
+      ]
+    }
+  },
+  "departamentos": {
+    "Financeiro, Contas a Pagar": {
+      "nome": "Financeiro, Contas a Pagar",
+      "marcos_tecnicos": [
+        "M04"
+      ],
+      "marcos_comerciais": [
+        "G01"
+      ]
+    },
+    "Compras": {
+      "nome": "Compras",
+      "marcos_tecnicos": [
+        "M03"
+      ],
+      "marcos_comerciais": [
+        "G02"
+      ]
+    },
+    "Secretaria, Geral": {
+      "nome": "Secretaria, Geral",
+      "marcos_tecnicos": [
+        "M05"
+      ],
+      "marcos_comerciais": [
+        "G02"
+      ]
+    },
+    "Frota, Gestão de Patrimônio": {
+      "nome": "Frota, Gestão de Patrimônio",
+      "marcos_tecnicos": [
+        "M06"
+      ],
+      "marcos_comerciais": [
+        "G03"
+      ]
+    },
+    "Gestão de Contratos": {
+      "nome": "Gestão de Contratos",
+      "marcos_tecnicos": [
+        "M07"
+      ],
+      "marcos_comerciais": [
+        "G04"
+      ]
+    },
+    "Recursos Humanos": {
+      "nome": "Recursos Humanos",
+      "marcos_tecnicos": [
+        "M08"
+      ],
+      "marcos_comerciais": [
+        "G05"
+      ]
+    },
+    "Licitação": {
+      "nome": "Licitação",
+      "marcos_tecnicos": [
+        "M02"
+      ],
+      "marcos_comerciais": [
+        "G06"
+      ]
+    },
+    "Ambiental": {
+      "nome": "Ambiental",
+      "marcos_tecnicos": [
+        "M09"
+      ],
+      "marcos_comerciais": [
+        "G07"
+      ]
+    },
+    "Controle tecnológico, Laboratório": {
+      "nome": "Controle tecnológico, Laboratório",
+      "marcos_tecnicos": [
+        "M10"
+      ],
+      "marcos_comerciais": [
+        "G07"
+      ]
+    },
+    "Escritório de Projetos, Intervia": {
+      "nome": "Escritório de Projetos, Intervia",
+      "marcos_tecnicos": [
+        "M11"
+      ],
+      "marcos_comerciais": [
+        "G07"
+      ]
+    },
+    "Verificador Independente": {
+      "nome": "Verificador Independente",
+      "marcos_tecnicos": [
+        "M12"
+      ],
+      "marcos_comerciais": [
+        "G07"
+      ]
+    },
+    "SINFRA, AGEHAB": {
+      "nome": "SINFRA, AGEHAB",
+      "marcos_tecnicos": [
+        "M13"
+      ],
+      "marcos_comerciais": [
+        "G08"
+      ]
+    },
+    "AGETO, 3S": {
+      "nome": "AGETO, 3S",
+      "marcos_tecnicos": [
+        "M14"
+      ],
+      "marcos_comerciais": [
+        "G08"
+      ]
+    },
+    "DNIT-MT": {
+      "nome": "DNIT-MT",
+      "marcos_tecnicos": [
+        "M15"
+      ],
+      "marcos_comerciais": [
+        "G09"
+      ]
+    },
+    "DNIT-GO": {
+      "nome": "DNIT-GO",
+      "marcos_tecnicos": [
+        "M16"
+      ],
+      "marcos_comerciais": [
+        "G09"
+      ]
+    },
+    "SEOSP, DER-MG": {
+      "nome": "SEOSP, DER-MG",
+      "marcos_tecnicos": [
+        "M17"
+      ],
+      "marcos_comerciais": [
+        "G09"
+      ]
+    },
+    "SEDUC": {
+      "nome": "SEDUC",
+      "marcos_tecnicos": [
+        "M18"
+      ],
+      "marcos_comerciais": [
+        "G09"
+      ]
+    },
+    "TI": {
+      "nome": "TI",
+      "marcos_tecnicos": [
+        "M01"
+      ],
+      "marcos_comerciais": [
+        "G10"
+      ]
+    }
+  },
+  "servicos": [
+    {
+      "marco_comercial": "G01",
+      "marco_tecnico": "M04",
+      "departamento": "Financeiro, Contas a Pagar",
+      "servico": "Entrada e validação documental.",
+      "detalhe": "Organização da recepção de documentos para lançamentos, com verificação de campos, classificação, completude e tratamento das pendências antes do encaminhamento.",
+      "processos": [
+        "P01-82",
+        "P03-54",
+        "P01-53",
+        "P01-54"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G01",
+      "marco_tecnico": "M04",
+      "departamento": "Financeiro, Contas a Pagar",
+      "servico": "Conferência de lançamentos.",
+      "detalhe": "Rotinas para confrontar lançamentos PagCorp e comprovantes, identificar divergências e registrar a correção ou justificativa com trilha de acompanhamento.",
+      "processos": [
+        "P01-55",
+        "P02-55",
+        "P02-53",
+        "P02-82",
+        "P02-54"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G01",
+      "marco_tecnico": "M04",
+      "departamento": "Financeiro, Contas a Pagar",
+      "servico": "Contas a pagar por natureza.",
+      "detalhe": "Fluxos para despesas gerais, prestadores PJ e terceiros, com informações de vencimento, aprovação, documentação e acompanhamento dos registros aplicáveis.",
+      "processos": [
+        "P01-24",
+        "P02-24",
+        "P03-24"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G01",
+      "marco_tecnico": "M04",
+      "departamento": "Financeiro, Contas a Pagar",
+      "servico": "Integração e rastreabilidade.",
+      "detalhe": "Mapeamento dos dados e documentos às interfaces autorizadas, reutilizando os conectores comuns. Definição de reconciliação e tratamento de rejeições ou duplicidades.",
+      "processos": [
+        "P01-82",
+        "P02-82",
+        "P01-24",
+        "P02-24",
+        "P03-24"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M03",
+      "departamento": "Compras",
+      "servico": "Requisição padronizada.",
+      "detalhe": "Entrada de solicitações com identificação da demanda, contrato ou centro de custo, itens, especificações e informações necessárias à análise da compra.",
+      "processos": [
+        "P01-80"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M03",
+      "departamento": "Compras",
+      "servico": "Cotação comparável.",
+      "detalhe": "Registro de fornecedores, propostas, preços e condições, com organização da comparação e justificativa da escolha, segundo os critérios aprovados pela RTA.",
+      "processos": [
+        "P02-80"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M03",
+      "departamento": "Compras",
+      "servico": "Alçadas e ordem de compra.",
+      "detalhe": "Encaminhamento das aprovações e geração ou registro da ordem, preservando vínculo entre requisição, decisão e compromisso com o fornecedor.",
+      "processos": [
+        "P03-80",
+        "P04-80"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M03",
+      "departamento": "Compras",
+      "servico": "Entrega e cadastro para faturamento.",
+      "detalhe": "Acompanhamento de prazo e recebimento, registro de divergências e manutenção das informações cadastrais das empresas utilizadas no faturamento.",
+      "processos": [
+        "P05-80",
+        "P06-80"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M05",
+      "departamento": "Secretaria, Geral",
+      "servico": "Documentos e requisições.",
+      "detalhe": "Organização da consulta cadastral, recepção de notas fiscais por e-mail, requisições e respectivos encaminhamentos, com controle de pendências e histórico.",
+      "processos": [
+        "P01-78",
+        "P03-78",
+        "P10-24",
+        "P11-24"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M05",
+      "departamento": "Secretaria, Geral",
+      "servico": "Rotinas de apoio.",
+      "detalhe": "Fluxos de aquisição de gêneros alimentícios, despesas semanais e solicitações de uniformes, EPIs e kits, com identificação da unidade ou contrato e evidências de atendimento.",
+      "processos": [
+        "P02-78",
+        "P04-24",
+        "P09-24",
+        "P01-26"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M05",
+      "departamento": "Secretaria, Geral",
+      "servico": "Interface com pessoas e benefícios.",
+      "detalhe": "Padronização dos encaminhamentos de ponto, folgas de campo, contratação CLT, transporte/refeição e plano de saúde, em coordenação com RH e Financeiro.",
+      "processos": [
+        "P04-78",
+        "P05-24",
+        "P06-24",
+        "P07-24",
+        "P08-24"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G02",
+      "marco_tecnico": "M05",
+      "departamento": "Secretaria, Geral",
+      "servico": "Medição e faturamento administrativo.",
+      "detalhe": "Estruturação do processo operacional identificado como P01-26 na fonte, com confirmação do nome, das entradas e das responsabilidades antes da configuração.",
+      "processos": [
+        "P03-78",
+        "P11-24"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G03",
+      "marco_tecnico": "M06",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "servico": "Cadastro e tombamento.",
+      "detalhe": "Recepção e identificação de ativos a partir dos documentos de aquisição, com vínculo entre item, responsável, localização, contrato e registro patrimonial aplicável.",
+      "processos": [
+        "P59-85",
+        "P05-85"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G03",
+      "marco_tecnico": "M06",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "servico": "Inventário e movimentação.",
+      "detalhe": "Rotinas de conferência, inspeção de avarias e transferência entre obras ou centros de custo, com atualização de custódia e evidências de entrega e recebimento.",
+      "processos": [
+        "P60-85",
+        "P61-85",
+        "P02-85",
+        "P03-85"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G03",
+      "marco_tecnico": "M06",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "servico": "Frota e manutenção.",
+      "detalhe": "Fluxos de mobilização/desmobilização, aprovações, ordens de serviço, manutenção preventiva e corretiva e acompanhamento das aquisições de veículos.",
+      "processos": [
+        "P62-85",
+        "P04-85"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G03",
+      "marco_tecnico": "M06",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "servico": "Custos e ciclo do ativo.",
+      "detalhe": "Consolidação dos dados de custos e depreciação previstos no diagnóstico, com controles de calibração, baixa e descarte sujeitos à validação das áreas responsáveis.",
+      "processos": [
+        "P01-85",
+        "P06-85"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G04",
+      "marco_tecnico": "M07",
+      "departamento": "Gestão de Contratos",
+      "servico": "Medição e faturamento.",
+      "detalhe": "Encadeamento da checagem de medições à emissão e organização de notas fiscais, ao lançamento no Omie e ao protocolo pertinente, com identificação do contrato e histórico.",
+      "processos": [
+        "P01-81",
+        "P01-36",
+        "P02-36",
+        "P03-36",
+        "P04-36",
+        "P06-36",
+        "P09-35"
+      ],
+      "qtd": 7
+    },
+    {
+      "marco_comercial": "G04",
+      "marco_tecnico": "M07",
+      "departamento": "Gestão de Contratos",
+      "servico": "Instrumentos e assinaturas.",
+      "detalhe": "Fluxos de elaboração de minutas, conferência, aprovação financeira e coleta de assinaturas, incluindo os encaminhamentos à direção e o controle das versões.",
+      "processos": [
+        "P01-34",
+        "P04-34",
+        "P05-34",
+        "P01-33",
+        "P02-33",
+        "P03-33",
+        "P02-34",
+        "P03-34"
+      ],
+      "qtd": 8
+    },
+    {
+      "marco_comercial": "G04",
+      "marco_tecnico": "M07",
+      "departamento": "Gestão de Contratos",
+      "servico": "Seguros e garantias.",
+      "detalhe": "Controle dos documentos, apólices, endossos e prazos, com solicitações e aprovações registradas e vinculação ao contrato correspondente.",
+      "processos": [
+        "P02-81",
+        "P08-36",
+        "P01-35"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G04",
+      "marco_tecnico": "M07",
+      "departamento": "Gestão de Contratos",
+      "servico": "Controladoria do contrato.",
+      "detalhe": "Rotinas de conciliação, encontro de contas, comprovantes de notas de débito, provisionamento, receitas e comparação entre gastos planejados e realizados, com apoio à contabilidade.",
+      "processos": [
+        "P05-36",
+        "P07-36",
+        "P02-35",
+        "P03-35",
+        "P04-35",
+        "P05-35",
+        "P06-35",
+        "P07-35",
+        "P08-35"
+      ],
+      "qtd": 9
+    },
+    {
+      "marco_comercial": "G05",
+      "marco_tecnico": "M08",
+      "departamento": "Recursos Humanos",
+      "servico": "Entrada e integração.",
+      "detalhe": "Fluxos de recrutamento, seleção, admissão e integração de conteúdo, com checklist, documentação, responsáveis e acompanhamento das pendências de entrada.",
+      "processos": [
+        "RH-01",
+        "RH-02"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G05",
+      "marco_tecnico": "M08",
+      "departamento": "Recursos Humanos",
+      "servico": "Vida funcional e benefícios.",
+      "detalhe": "Rotinas de férias, afastamentos, movimentação e elegibilidade de benefícios, desempenho e clima, utilizando critérios e perfis de acesso aprovados pela RTA.",
+      "processos": [
+        "RH-04",
+        "RH-08",
+        "RH-09"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G05",
+      "marco_tecnico": "M08",
+      "departamento": "Recursos Humanos",
+      "servico": "Ponto e fechamento.",
+      "detalhe": "Consolidação dos dados de ponto, horas extras, descontos e acréscimos para o fechamento de folha, com conferências e registro de divergências.",
+      "processos": [
+        "RH-07",
+        "RH-10",
+        "RH-11"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G05",
+      "marco_tecnico": "M08",
+      "departamento": "Recursos Humanos",
+      "servico": "Autoatendimento e saída.",
+      "detalhe": "Acesso controlado às informações pós-fechamento e aos holerites, incluindo os cenários assistidos por IA previstos; fluxo de desligamento com devoluções, comunicação e revogação de acessos.",
+      "processos": [
+        "RH-03",
+        "RH-05",
+        "RH-06",
+        "RH-12"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G06",
+      "marco_tecnico": "M02",
+      "departamento": "Licitação",
+      "servico": "Triagem e viabilidade.",
+      "detalhe": "Estrutura para registrar edital, requisitos, prazos, análise de viabilidade técnica e matriz de avaliação competitiva, com critérios e responsáveis definidos pela RTA.",
+      "processos": [
+        "P01-75"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G06",
+      "marco_tecnico": "M02",
+      "departamento": "Licitação",
+      "servico": "Habilitação e acervo.",
+      "detalhe": "Organização dos documentos e registros técnicos, com indexação, vigência, responsáveis e checklist de composição do conjunto exigido para cada oportunidade.",
+      "processos": [
+        "P02-75"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G06",
+      "marco_tecnico": "M02",
+      "departamento": "Licitação",
+      "servico": "Regularidade e vencimentos.",
+      "detalhe": "Controle dos registros CREA/CRQ e certidões citados no diagnóstico, com atualização de situação e alertas para acompanhamento das equipes responsáveis.",
+      "processos": [
+        "P03-75"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G06",
+      "marco_tecnico": "M02",
+      "departamento": "Licitação",
+      "servico": "Sessões e decisões.",
+      "detalhe": "Fluxo para análise de esclarecimentos, impugnações, consórcios, convocações e sessões públicas, com histórico das decisões e evidências organizadas por oportunidade.",
+      "processos": [
+        "P04-75",
+        "P05-75"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M09",
+      "departamento": "Ambiental",
+      "servico": "Demanda e planejamento.",
+      "detalhe": "Triagem, prioridade, ordens de serviço, agenda de vistorias e requisição de logística/equipamentos, com critérios de responsabilidade e acompanhamento.",
+      "processos": [
+        "P01-32",
+        "P02-32",
+        "P50-85",
+        "P51-85",
+        "P52-85",
+        "P53-85"
+      ],
+      "qtd": 6
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M09",
+      "departamento": "Ambiental",
+      "servico": "Campo e geoprocessamento.",
+      "detalhe": "Registros de campo e organização dos dados geográficos e evidências, com tratamento, revisão e disponibilização das informações para estudos e relatórios.",
+      "processos": [
+        "P54-85",
+        "P55-85",
+        "P56-85",
+        "P57-85",
+        "P58-85",
+        "P03-32",
+        "P04-32",
+        "P05-32"
+      ],
+      "qtd": 8
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M09",
+      "departamento": "Ambiental",
+      "servico": "Estudos e documentação.",
+      "detalhe": "Rotinas assistidas de composição, revisão e aprovação de estudos, PRAD/PGRS, relatórios diários/mensais, ofícios e registros de protocolo, conforme os modelos da RTA.",
+      "processos": [
+        "P06-32",
+        "P07-32",
+        "P08-32",
+        "P09-32",
+        "P10-32",
+        "P11-32"
+      ],
+      "qtd": 6
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M09",
+      "departamento": "Ambiental",
+      "servico": "Obrigações e interfaces.",
+      "detalhe": "Controle de licenças, condicionantes, matrizes de conformidade, relatórios de supervisoras e interfaces com órgãos especializados, incluindo os cenários FUNAI/IPHAN indicados na fonte.",
+      "processos": [
+        "P12-32",
+        "P13-32",
+        "P14-32",
+        "P15-32",
+        "P16-32"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M10",
+      "departamento": "Controle tecnológico, Laboratório",
+      "servico": "Planejamento e amostragem.",
+      "detalhe": "Registro das demandas e preparação das atividades de campo/laboratório, com identificação de amostra, ensaio, local, data e responsável conforme os parâmetros aprovados.",
+      "processos": [
+        "P01-42",
+        "P01-50"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M10",
+      "departamento": "Controle tecnológico, Laboratório",
+      "servico": "Coleta e resultados.",
+      "detalhe": "Estruturação da captura de informações de campo, retrorefletância e ensaios, com validações de preenchimento e preparação dos dados para sincronização.",
+      "processos": [
+        "P02-42",
+        "P02-50"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M10",
+      "departamento": "Controle tecnológico, Laboratório",
+      "servico": "Triagem e relatório.",
+      "detalhe": "Organização dos resultados, tratamento das pendências e composição assistida dos relatórios, com trilha de revisão e aprovação técnica antes da emissão.",
+      "processos": [
+        "P03-42",
+        "P03-50",
+        "P04-42",
+        "P04-50"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M10",
+      "departamento": "Controle tecnológico, Laboratório",
+      "servico": "Apoio às propostas técnicas.",
+      "detalhe": "Organização dos cenários de dimensionamento de recursos e metodologia identificados nesta área no diagnóstico, preservando sua interface com Licitações.",
+      "processos": [
+        "P03-75",
+        "P04-75"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M11",
+      "departamento": "Escritório de Projetos, Intervia",
+      "servico": "Intervia e inspeções de OAEs.",
+      "detalhe": "Fluxos de recebimento e distribuição de inspeções, gestão dos arquivos SGE, extração dos dados e avaliação técnica, com situação e responsáveis rastreáveis.",
+      "processos": [
+        "P03-76",
+        "P04-76",
+        "ESC-PROJ-03",
+        "ESC-PROJ-07"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M11",
+      "departamento": "Escritório de Projetos, Intervia",
+      "servico": "Dados e produtividade.",
+      "detalhe": "Organização da sincronização e das visões Power BI relacionadas ao DNIT, com indicadores de produtividade, auditoria e atualização das informações.",
+      "processos": [
+        "P01-76",
+        "P02-76",
+        "P05-76"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M11",
+      "departamento": "Escritório de Projetos, Intervia",
+      "servico": "Rotinas de projetos.",
+      "detalhe": "Apoio digital aos estudos de tráfego, acidentes, terraplenagem/Bruckner e hidrologia, com entradas padronizadas, cálculos ou intercâmbios previstos e evidências de validação.",
+      "processos": [
+        "ESC-PROJ-01",
+        "ESC-PROJ-04",
+        "ESC-PROJ-05",
+        "ESC-PROJ-06"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M11",
+      "departamento": "Escritório de Projetos, Intervia",
+      "servico": "Campo e peças técnicas.",
+      "detalhe": "Rotinas para drenagem, obras complementares, interferências, nuvem de pontos/MDT no Civil 3D, notas de serviço e caderno de topografia, conforme os cenários diagnosticados.",
+      "processos": [
+        "ESC-PROJ-08",
+        "ESC-PROJ-09",
+        "ESC-PROJ-02"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M12",
+      "departamento": "Verificador Independente",
+      "servico": "Demandas e análise técnica.",
+      "detalhe": "Fluxos de recepção, triagem e acompanhamento de pleitos, aditivos e pareceres, incluindo RPFO, PATO e REF, com histórico e responsável pela avaliação.",
+      "processos": [
+        "P02-SINFRA-VI",
+        "P04-SINFRA-VI",
+        "P05-SINFRA-VI"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M12",
+      "departamento": "Verificador Independente",
+      "servico": "Planejamento e inspeção.",
+      "detalhe": "Organização de rotas, logística, segmentos homogêneos e quilometragem, com captura de ocorrências e evidências vinculadas ao ativo ou segmento.",
+      "processos": [
+        "P03-VI-CAMPO",
+        "P05-VI-CAMPO",
+        "P06-VI-CAMPO"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M12",
+      "departamento": "Verificador Independente",
+      "servico": "Continuidade das evidências.",
+      "detalhe": "Referência a fotos históricas, identificação de autoria e tratamento da sincronização de campo, com validação de integridade e prevenção de perda ou duplicidade.",
+      "processos": [
+        "P01-SINFRA-VI",
+        "P03-SINFRA-VI"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G07",
+      "marco_tecnico": "M12",
+      "departamento": "Verificador Independente",
+      "servico": "Auditoria e consolidação.",
+      "detalhe": "Apoio à revisão de relatórios das supervisoras e à composição dos relatórios fotográfico e geral mensal, com controle de complementações e aprovação.",
+      "processos": [
+        "P01-VI-CAMPO",
+        "P02-VI-CAMPO",
+        "P04-VI-CAMPO"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M13",
+      "departamento": "SINFRA, AGEHAB",
+      "servico": "SINFRA e coordenação.",
+      "detalhe": "Organização de e-mails, ordens de serviço, aditivos, Diário Oficial, medições e prazos, com distribuição de demandas e composição dos relatórios mensais.",
+      "processos": [
+        "P01-17",
+        "P02-17",
+        "P03-17",
+        "P01-15",
+        "P01-12"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M13",
+      "departamento": "SINFRA, AGEHAB",
+      "servico": "Dados rodoviários.",
+      "detalhe": "Acompanhamento de pontos críticos e não conformidades, tratamento de sincronização SINFRALOG/ICM e organização da comprovação de dados perante o cliente.",
+      "processos": [
+        "P01-20",
+        "P02-20",
+        "P01-19",
+        "P02-19",
+        "P01-14"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M13",
+      "departamento": "SINFRA, AGEHAB",
+      "servico": "Bases de planejamento.",
+      "detalhe": "Estruturação do histórico de pagamentos, interfaces técnicas, supervisão, geoprocessamento ArcGIS e informações de orçamento/curva ABC previstas no diagnóstico.",
+      "processos": [
+        "P01-16",
+        "P02-16",
+        "P03-16",
+        "P01-18",
+        "P02-18",
+        "P03-18"
+      ],
+      "qtd": 6
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M13",
+      "departamento": "SINFRA, AGEHAB",
+      "servico": "AGEHAB e obras habitacionais.",
+      "detalhe": "Rotinas de status diário, diários de obra, relatório fotográfico semanal e consolidação dos relatórios semanal e mensal contratual.",
+      "processos": [
+        "P01-47",
+        "P02-47",
+        "P04-47",
+        "P05-47"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M14",
+      "departamento": "AGETO, 3S",
+      "servico": "Produtos AGETO.",
+      "detalhe": "Fluxos de ordens de serviço, coordenação, inspeções, supervisão de restauração/pavimentação/OAEs, ensaios e sinalização, com evidências organizadas por produto.",
+      "processos": [
+        "AGETO-01",
+        "AGETO-02",
+        "AGETO-03",
+        "AGETO-04",
+        "AGETO-05"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M14",
+      "departamento": "AGETO, 3S",
+      "servico": "Geoportal e controladoria.",
+      "detalhe": "Tratamento dos pontos críticos e informações geográficas, acompanhado da organização dos dados de frota, ativos e compensação consorcial previstos.",
+      "processos": [
+        "AGETO-06",
+        "AGETO-07",
+        "AGETO-08",
+        "AGETO-09"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M14",
+      "departamento": "AGETO, 3S",
+      "servico": "Projetos e análises do 3S.",
+      "detalhe": "Rotinas de triagem normativa, análise estrutural e hidrológica, gestão de projetos, cotações/orçamentos, pleitos e aditivos, apoiadas em parâmetros homologados.",
+      "processos": [
+        "3S-01",
+        "3S-02",
+        "3S-03",
+        "3S-04",
+        "3S-05"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G08",
+      "marco_tecnico": "M14",
+      "departamento": "AGETO, 3S",
+      "servico": "Consolidação contratual.",
+      "detalhe": "Acompanhamento de medições, informações Diário Oficial/FIPLAN, avanço físico-financeiro e curva S, incluindo o relatório mensal em quatro partes citado no diagnóstico.",
+      "processos": [
+        "3S-06",
+        "3S-07",
+        "3S-08",
+        "3S-09",
+        "3S-10"
+      ],
+      "qtd": 5
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M15",
+      "departamento": "DNIT-MT",
+      "servico": "Gestão e Produto 1.",
+      "detalhe": "Organização dos dados administrativo-financeiros, empenhos e documentos que compõem o caderno do Produto 1, com fontes e atualização identificadas.",
+      "processos": [
+        "DNIT-MT-01"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M15",
+      "departamento": "DNIT-MT",
+      "servico": "Evolução física e financeira.",
+      "detalhe": "Rotinas de supervisão, curva S, caderno do Produto 2 e diagrama linear, conectando períodos, trechos e informações aprovadas de execução.",
+      "processos": [
+        "DNIT-MT-02",
+        "DNIT-MT-03"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M15",
+      "departamento": "DNIT-MT",
+      "servico": "Ensaios e ICM.",
+      "detalhe": "Estruturação dos resultados laboratoriais e laudos, além do fluxo de levantamento em vídeo, pós-processamento e composição do relatório ICM previsto no diagnóstico.",
+      "processos": [
+        "DNIT-MT-04",
+        "DNIT-MT-05"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M15",
+      "departamento": "DNIT-MT",
+      "servico": "Ocorrências e conformidade.",
+      "detalhe": "Vistorias, registros fotográficos, não conformidades e passivos ambientais, com responsáveis, situação e evidências associadas ao trecho.",
+      "processos": [
+        "DNIT-MT-06",
+        "DNIT-MT-07"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M16",
+      "departamento": "DNIT-GO",
+      "servico": "Coordenação e manutenção.",
+      "detalhe": "Organização do fechamento mensal consolidado e da supervisão de manutenção rodoviária, com recebimento de informações e conferência das medições.",
+      "processos": [
+        "DNIT-GO-01",
+        "DNIT-GO-02",
+        "DNIT-GO-03"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M16",
+      "departamento": "DNIT-GO",
+      "servico": "Ambiental e tecnologia.",
+      "detalhe": "Fluxos para auditoria de relatórios das quatro supervisoras, ciclo de licenças, ensaios laboratoriais e controles de qualidade aplicáveis.",
+      "processos": [
+        "DNIT-GO-04",
+        "DNIT-GO-06"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M16",
+      "departamento": "DNIT-GO",
+      "servico": "Planejamento e operação.",
+      "detalhe": "Estruturação das informações de malha/SNV, tráfego, faixa de domínio e apoio aos processos de desapropriação e demandas jurídicas identificadas.",
+      "processos": [
+        "DNIT-GO-05",
+        "DNIT-GO-09",
+        "DNIT-GO-10"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M16",
+      "departamento": "DNIT-GO",
+      "servico": "Comunicação e suporte.",
+      "detalhe": "Organização de clipping, demandas de imprensa, apoio a eventos e dados de sistemas, frota e indicadores, compondo os produtos contratuais correspondentes.",
+      "processos": [
+        "DNIT-GO-07",
+        "DNIT-GO-08",
+        "DNIT-GO-11"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M17",
+      "departamento": "SEOSP, DER-MG",
+      "servico": "SEOSP e base de obras.",
+      "detalhe": "Organização da planilha-mãe, sincronização das informações e numeração centralizada das demandas, com rastreabilidade das alterações e tratamento de divergências.",
+      "processos": [
+        "SEOSP-07",
+        "SEOSP-08",
+        "SEOSP-03",
+        "SEOSP-05"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M17",
+      "departamento": "SEOSP, DER-MG",
+      "servico": "Produtos SEOSP.",
+      "detalhe": "Fluxos de coordenação, supervisão de edificações e saneamento, convênios municipais, licenciamento e apoio a dados/sistemas, com validação das saídas por produto.",
+      "processos": [
+        "SEOSP-01",
+        "SEOSP-02",
+        "SEOSP-04",
+        "SEOSP-06"
+      ],
+      "qtd": 4
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M17",
+      "departamento": "SEOSP, DER-MG",
+      "servico": "Campo DER-MG.",
+      "detalhe": "Rotinas de filmagem e processamento, coleta móvel de dispositivos de drenagem, diários de obra e registros das oito regionais citadas no diagnóstico.",
+      "processos": [
+        "DER-MG-02",
+        "DER-MG-03",
+        "DER-MG-04"
+      ],
+      "qtd": 3
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M17",
+      "departamento": "SEOSP, DER-MG",
+      "servico": "Planejamento e gestão DER-MG.",
+      "detalhe": "Controles físico-financeiros e de margem, planejamento semestral, programação mensal/semanal e composição do caderno consolidado.",
+      "processos": [
+        "DER-MG-01",
+        "DER-MG-05"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M18",
+      "departamento": "SEDUC",
+      "servico": "Orçamento e demandas.",
+      "detalhe": "Fluxos de empenhos e descentralizações, interfaces SEI e tratamento das demandas Coinfra nos cenários GPOI/GFIS, com identificação de pendências e responsáveis.",
+      "processos": [
+        "SEDUC-01",
+        "SEDUC-02"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M18",
+      "departamento": "SEDUC",
+      "servico": "Campo e priorização.",
+      "detalhe": "Estruturação dos levantamentos de sede/interior e da matriz GUT, com evidências e critérios de classificação homologados pela RTA.",
+      "processos": [
+        "SEDUC-03"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M18",
+      "departamento": "SEDUC",
+      "servico": "Controles especializados.",
+      "detalhe": "Rotinas de auditoria de faturas/usinas fotovoltaicas e acompanhamento de licenças e outorgas de poços, conforme os produtos indicados no diagnóstico.",
+      "processos": [
+        "SEDUC-04",
+        "SEDUC-05"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G09",
+      "marco_tecnico": "M18",
+      "departamento": "SEDUC",
+      "servico": "Instrução e revisão contratual.",
+      "detalhe": "Organização dos dados e documentos de termos circunstanciados, sanções, auditoria de planilhas e aditivos, com encaminhamento para análise dos responsáveis.",
+      "processos": [
+        "SEDUC-06",
+        "SEDUC-07"
+      ],
+      "qtd": 2
+    },
+    {
+      "marco_comercial": "G10",
+      "marco_tecnico": "M01",
+      "departamento": "TI",
+      "servico": "Acompanhamento da infraestrutura.",
+      "detalhe": "Organização de verificações de links, fluxo de dados, hardware, servidores, energia e CFTV, com registro de ocorrências, responsáveis, histórico e encaminhamento das ações aplicáveis.",
+      "processos": [
+        "P01-79"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G10",
+      "marco_tecnico": "M01",
+      "departamento": "TI",
+      "servico": "Atendimento e chamados.",
+      "detalhe": "Fluxo de abertura, classificação, direcionamento e acompanhamento de solicitações, com critérios de prioridade, status, comunicação ao solicitante e evidências de resolução.",
+      "processos": [
+        "P02-79"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G10",
+      "marco_tecnico": "M01",
+      "departamento": "TI",
+      "servico": "Inventário de TI.",
+      "detalhe": "Cadastro e atualização dos ativos, com identificação, localização, responsável e informações de controle, permitindo reconciliar a base com uma amostra dos equipamentos existentes.",
+      "processos": [
+        "P03-79"
+      ],
+      "qtd": 1
+    },
+    {
+      "marco_comercial": "G10",
+      "marco_tecnico": "M01",
+      "departamento": "TI",
+      "servico": "Governança inicial compartilhada.",
+      "detalhe": "Verificação de que os acessos, o SharePoint, a recuperação de dados, o portal e as visões executivas iniciais necessários ao marco estão disponíveis. A construção desses componentes usa o orçamento transversal, sem duplicação no M01.",
+      "processos": [
+        "P01-79",
+        "P02-79",
+        "P03-79"
+      ],
+      "qtd": 3
+    }
+  ],
+  "processos": {
+    "P01-82": {
+      "id": "P01-82",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P03-54": {
+      "id": "P03-54",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P01-53": {
+      "id": "P01-53",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P01-54": {
+      "id": "P01-54",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P01-55": {
+      "id": "P01-55",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P02-55": {
+      "id": "P02-55",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P02-53": {
+      "id": "P02-53",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P02-82": {
+      "id": "P02-82",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P02-54": {
+      "id": "P02-54",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P01-24": {
+      "id": "P01-24",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P02-24": {
+      "id": "P02-24",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P03-24": {
+      "id": "P03-24",
+      "nome": "Processo operacional do setor Financeiro, Contas a Pagar",
+      "departamento": "Financeiro, Contas a Pagar",
+      "marco": "M04"
+    },
+    "P01-80": {
+      "id": "P01-80",
+      "nome": "Processo operacional do setor Compras",
+      "departamento": "Compras",
+      "marco": "M03"
+    },
+    "P02-80": {
+      "id": "P02-80",
+      "nome": "Processo operacional do setor Compras",
+      "departamento": "Compras",
+      "marco": "M03"
+    },
+    "P03-80": {
+      "id": "P03-80",
+      "nome": "Processo operacional do setor Compras",
+      "departamento": "Compras",
+      "marco": "M03"
+    },
+    "P04-80": {
+      "id": "P04-80",
+      "nome": "Processo operacional do setor Compras",
+      "departamento": "Compras",
+      "marco": "M03"
+    },
+    "P05-80": {
+      "id": "P05-80",
+      "nome": "Processo operacional do setor Compras",
+      "departamento": "Compras",
+      "marco": "M03"
+    },
+    "P06-80": {
+      "id": "P06-80",
+      "nome": "Processo operacional do setor Compras",
+      "departamento": "Compras",
+      "marco": "M03"
+    },
+    "P01-78": {
+      "id": "P01-78",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P03-78": {
+      "id": "P03-78",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P10-24": {
+      "id": "P10-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P11-24": {
+      "id": "P11-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P02-78": {
+      "id": "P02-78",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P04-24": {
+      "id": "P04-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P09-24": {
+      "id": "P09-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P01-26": {
+      "id": "P01-26",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P04-78": {
+      "id": "P04-78",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P05-24": {
+      "id": "P05-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P06-24": {
+      "id": "P06-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P07-24": {
+      "id": "P07-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P08-24": {
+      "id": "P08-24",
+      "nome": "Processo operacional do setor Secretaria, Geral",
+      "departamento": "Secretaria, Geral",
+      "marco": "M05"
+    },
+    "P59-85": {
+      "id": "P59-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P05-85": {
+      "id": "P05-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P60-85": {
+      "id": "P60-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P61-85": {
+      "id": "P61-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P02-85": {
+      "id": "P02-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P03-85": {
+      "id": "P03-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P62-85": {
+      "id": "P62-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P04-85": {
+      "id": "P04-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P01-85": {
+      "id": "P01-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P06-85": {
+      "id": "P06-85",
+      "nome": "Processo operacional do setor Frota, Gestão de Patrimônio",
+      "departamento": "Frota, Gestão de Patrimônio",
+      "marco": "M06"
+    },
+    "P01-81": {
+      "id": "P01-81",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P01-36": {
+      "id": "P01-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P02-36": {
+      "id": "P02-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P03-36": {
+      "id": "P03-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P04-36": {
+      "id": "P04-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P06-36": {
+      "id": "P06-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P09-35": {
+      "id": "P09-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P01-34": {
+      "id": "P01-34",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P04-34": {
+      "id": "P04-34",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P05-34": {
+      "id": "P05-34",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P01-33": {
+      "id": "P01-33",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P02-33": {
+      "id": "P02-33",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P03-33": {
+      "id": "P03-33",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P02-34": {
+      "id": "P02-34",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P03-34": {
+      "id": "P03-34",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P02-81": {
+      "id": "P02-81",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P08-36": {
+      "id": "P08-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P01-35": {
+      "id": "P01-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P05-36": {
+      "id": "P05-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P07-36": {
+      "id": "P07-36",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P02-35": {
+      "id": "P02-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P03-35": {
+      "id": "P03-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P04-35": {
+      "id": "P04-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P05-35": {
+      "id": "P05-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P06-35": {
+      "id": "P06-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P07-35": {
+      "id": "P07-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "P08-35": {
+      "id": "P08-35",
+      "nome": "Processo operacional do setor Gestão de Contratos",
+      "departamento": "Gestão de Contratos",
+      "marco": "M07"
+    },
+    "RH-01": {
+      "id": "RH-01",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-02": {
+      "id": "RH-02",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-04": {
+      "id": "RH-04",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-08": {
+      "id": "RH-08",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-09": {
+      "id": "RH-09",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-07": {
+      "id": "RH-07",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-10": {
+      "id": "RH-10",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-11": {
+      "id": "RH-11",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-03": {
+      "id": "RH-03",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-05": {
+      "id": "RH-05",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-06": {
+      "id": "RH-06",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "RH-12": {
+      "id": "RH-12",
+      "nome": "Processo operacional do setor Recursos Humanos",
+      "departamento": "Recursos Humanos",
+      "marco": "M08"
+    },
+    "P01-75": {
+      "id": "P01-75",
+      "nome": "Processo operacional do setor Licitação",
+      "departamento": "Licitação",
+      "marco": "M02"
+    },
+    "P02-75": {
+      "id": "P02-75",
+      "nome": "Processo operacional do setor Licitação",
+      "departamento": "Licitação",
+      "marco": "M02"
+    },
+    "P03-75": {
+      "id": "P03-75",
+      "nome": "Processo operacional do setor Licitação",
+      "departamento": "Licitação",
+      "marco": "M02"
+    },
+    "P04-75": {
+      "id": "P04-75",
+      "nome": "Processo operacional do setor Licitação",
+      "departamento": "Licitação",
+      "marco": "M02"
+    },
+    "P05-75": {
+      "id": "P05-75",
+      "nome": "Processo operacional do setor Licitação",
+      "departamento": "Licitação",
+      "marco": "M02"
+    },
+    "P01-32": {
+      "id": "P01-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P02-32": {
+      "id": "P02-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P50-85": {
+      "id": "P50-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P51-85": {
+      "id": "P51-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P52-85": {
+      "id": "P52-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P53-85": {
+      "id": "P53-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P54-85": {
+      "id": "P54-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P55-85": {
+      "id": "P55-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P56-85": {
+      "id": "P56-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P57-85": {
+      "id": "P57-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P58-85": {
+      "id": "P58-85",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P03-32": {
+      "id": "P03-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P04-32": {
+      "id": "P04-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P05-32": {
+      "id": "P05-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P06-32": {
+      "id": "P06-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P07-32": {
+      "id": "P07-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P08-32": {
+      "id": "P08-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P09-32": {
+      "id": "P09-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P10-32": {
+      "id": "P10-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P11-32": {
+      "id": "P11-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P12-32": {
+      "id": "P12-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P13-32": {
+      "id": "P13-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P14-32": {
+      "id": "P14-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P15-32": {
+      "id": "P15-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P16-32": {
+      "id": "P16-32",
+      "nome": "Processo operacional do setor Ambiental",
+      "departamento": "Ambiental",
+      "marco": "M09"
+    },
+    "P01-42": {
+      "id": "P01-42",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P01-50": {
+      "id": "P01-50",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P02-42": {
+      "id": "P02-42",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P02-50": {
+      "id": "P02-50",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P03-42": {
+      "id": "P03-42",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P03-50": {
+      "id": "P03-50",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P04-42": {
+      "id": "P04-42",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P04-50": {
+      "id": "P04-50",
+      "nome": "Processo operacional do setor Controle tecnológico, Laboratório",
+      "departamento": "Controle tecnológico, Laboratório",
+      "marco": "M10"
+    },
+    "P03-76": {
+      "id": "P03-76",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "P04-76": {
+      "id": "P04-76",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-03": {
+      "id": "ESC-PROJ-03",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-07": {
+      "id": "ESC-PROJ-07",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "P01-76": {
+      "id": "P01-76",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "P02-76": {
+      "id": "P02-76",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "P05-76": {
+      "id": "P05-76",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-01": {
+      "id": "ESC-PROJ-01",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-04": {
+      "id": "ESC-PROJ-04",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-05": {
+      "id": "ESC-PROJ-05",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-06": {
+      "id": "ESC-PROJ-06",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-08": {
+      "id": "ESC-PROJ-08",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-09": {
+      "id": "ESC-PROJ-09",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "ESC-PROJ-02": {
+      "id": "ESC-PROJ-02",
+      "nome": "Processo operacional do setor Escritório de Projetos, Intervia",
+      "departamento": "Escritório de Projetos, Intervia",
+      "marco": "M11"
+    },
+    "P02-SINFRA-VI": {
+      "id": "P02-SINFRA-VI",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P04-SINFRA-VI": {
+      "id": "P04-SINFRA-VI",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P05-SINFRA-VI": {
+      "id": "P05-SINFRA-VI",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P03-VI-CAMPO": {
+      "id": "P03-VI-CAMPO",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P05-VI-CAMPO": {
+      "id": "P05-VI-CAMPO",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P06-VI-CAMPO": {
+      "id": "P06-VI-CAMPO",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P01-SINFRA-VI": {
+      "id": "P01-SINFRA-VI",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P03-SINFRA-VI": {
+      "id": "P03-SINFRA-VI",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P01-VI-CAMPO": {
+      "id": "P01-VI-CAMPO",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P02-VI-CAMPO": {
+      "id": "P02-VI-CAMPO",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P04-VI-CAMPO": {
+      "id": "P04-VI-CAMPO",
+      "nome": "Processo operacional do setor Verificador Independente",
+      "departamento": "Verificador Independente",
+      "marco": "M12"
+    },
+    "P01-17": {
+      "id": "P01-17",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P02-17": {
+      "id": "P02-17",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P03-17": {
+      "id": "P03-17",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-15": {
+      "id": "P01-15",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-12": {
+      "id": "P01-12",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-20": {
+      "id": "P01-20",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P02-20": {
+      "id": "P02-20",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-19": {
+      "id": "P01-19",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P02-19": {
+      "id": "P02-19",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-14": {
+      "id": "P01-14",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-16": {
+      "id": "P01-16",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P02-16": {
+      "id": "P02-16",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P03-16": {
+      "id": "P03-16",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-18": {
+      "id": "P01-18",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P02-18": {
+      "id": "P02-18",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P03-18": {
+      "id": "P03-18",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P01-47": {
+      "id": "P01-47",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P02-47": {
+      "id": "P02-47",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P04-47": {
+      "id": "P04-47",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "P05-47": {
+      "id": "P05-47",
+      "nome": "Processo operacional do setor SINFRA, AGEHAB",
+      "departamento": "SINFRA, AGEHAB",
+      "marco": "M13"
+    },
+    "AGETO-01": {
+      "id": "AGETO-01",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-02": {
+      "id": "AGETO-02",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-03": {
+      "id": "AGETO-03",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-04": {
+      "id": "AGETO-04",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-05": {
+      "id": "AGETO-05",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-06": {
+      "id": "AGETO-06",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-07": {
+      "id": "AGETO-07",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-08": {
+      "id": "AGETO-08",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "AGETO-09": {
+      "id": "AGETO-09",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-01": {
+      "id": "3S-01",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-02": {
+      "id": "3S-02",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-03": {
+      "id": "3S-03",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-04": {
+      "id": "3S-04",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-05": {
+      "id": "3S-05",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-06": {
+      "id": "3S-06",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-07": {
+      "id": "3S-07",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-08": {
+      "id": "3S-08",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-09": {
+      "id": "3S-09",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "3S-10": {
+      "id": "3S-10",
+      "nome": "Processo operacional do setor AGETO, 3S",
+      "departamento": "AGETO, 3S",
+      "marco": "M14"
+    },
+    "DNIT-MT-01": {
+      "id": "DNIT-MT-01",
+      "nome": "Processo operacional do setor DNIT-MT",
+      "departamento": "DNIT-MT",
+      "marco": "M15"
+    },
+    "DNIT-MT-02": {
+      "id": "DNIT-MT-02",
+      "nome": "Processo operacional do setor DNIT-MT",
+      "departamento": "DNIT-MT",
+      "marco": "M15"
+    },
+    "DNIT-MT-03": {
+      "id": "DNIT-MT-03",
+      "nome": "Processo operacional do setor DNIT-MT",
+      "departamento": "DNIT-MT",
+      "marco": "M15"
+    },
+    "DNIT-MT-04": {
+      "id": "DNIT-MT-04",
+      "nome": "Processo operacional do setor DNIT-MT",
+      "departamento": "DNIT-MT",
+      "marco": "M15"
+    },
+    "DNIT-MT-05": {
+      "id": "DNIT-MT-05",
+      "nome": "Processo operacional do setor DNIT-MT",
+      "departamento": "DNIT-MT",
+      "marco": "M15"
+    },
+    "DNIT-MT-06": {
+      "id": "DNIT-MT-06",
+      "nome": "Processo operacional do setor DNIT-MT",
+      "departamento": "DNIT-MT",
+      "marco": "M15"
+    },
+    "DNIT-MT-07": {
+      "id": "DNIT-MT-07",
+      "nome": "Processo operacional do setor DNIT-MT",
+      "departamento": "DNIT-MT",
+      "marco": "M15"
+    },
+    "DNIT-GO-01": {
+      "id": "DNIT-GO-01",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-02": {
+      "id": "DNIT-GO-02",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-03": {
+      "id": "DNIT-GO-03",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-04": {
+      "id": "DNIT-GO-04",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-06": {
+      "id": "DNIT-GO-06",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-05": {
+      "id": "DNIT-GO-05",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-09": {
+      "id": "DNIT-GO-09",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-10": {
+      "id": "DNIT-GO-10",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-07": {
+      "id": "DNIT-GO-07",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-08": {
+      "id": "DNIT-GO-08",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "DNIT-GO-11": {
+      "id": "DNIT-GO-11",
+      "nome": "Processo operacional do setor DNIT-GO",
+      "departamento": "DNIT-GO",
+      "marco": "M16"
+    },
+    "SEOSP-07": {
+      "id": "SEOSP-07",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEOSP-08": {
+      "id": "SEOSP-08",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEOSP-03": {
+      "id": "SEOSP-03",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEOSP-05": {
+      "id": "SEOSP-05",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEOSP-01": {
+      "id": "SEOSP-01",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEOSP-02": {
+      "id": "SEOSP-02",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEOSP-04": {
+      "id": "SEOSP-04",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEOSP-06": {
+      "id": "SEOSP-06",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "DER-MG-02": {
+      "id": "DER-MG-02",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "DER-MG-03": {
+      "id": "DER-MG-03",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "DER-MG-04": {
+      "id": "DER-MG-04",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "DER-MG-01": {
+      "id": "DER-MG-01",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "DER-MG-05": {
+      "id": "DER-MG-05",
+      "nome": "Processo operacional do setor SEOSP, DER-MG",
+      "departamento": "SEOSP, DER-MG",
+      "marco": "M17"
+    },
+    "SEDUC-01": {
+      "id": "SEDUC-01",
+      "nome": "Processo operacional do setor SEDUC",
+      "departamento": "SEDUC",
+      "marco": "M18"
+    },
+    "SEDUC-02": {
+      "id": "SEDUC-02",
+      "nome": "Processo operacional do setor SEDUC",
+      "departamento": "SEDUC",
+      "marco": "M18"
+    },
+    "SEDUC-03": {
+      "id": "SEDUC-03",
+      "nome": "Processo operacional do setor SEDUC",
+      "departamento": "SEDUC",
+      "marco": "M18"
+    },
+    "SEDUC-04": {
+      "id": "SEDUC-04",
+      "nome": "Processo operacional do setor SEDUC",
+      "departamento": "SEDUC",
+      "marco": "M18"
+    },
+    "SEDUC-05": {
+      "id": "SEDUC-05",
+      "nome": "Processo operacional do setor SEDUC",
+      "departamento": "SEDUC",
+      "marco": "M18"
+    },
+    "SEDUC-06": {
+      "id": "SEDUC-06",
+      "nome": "Processo operacional do setor SEDUC",
+      "departamento": "SEDUC",
+      "marco": "M18"
+    },
+    "SEDUC-07": {
+      "id": "SEDUC-07",
+      "nome": "Processo operacional do setor SEDUC",
+      "departamento": "SEDUC",
+      "marco": "M18"
+    },
+    "P01-79": {
+      "id": "P01-79",
+      "nome": "Processo operacional do setor TI",
+      "departamento": "TI",
+      "marco": "M01"
+    },
+    "P02-79": {
+      "id": "P02-79",
+      "nome": "Processo operacional do setor TI",
+      "departamento": "TI",
+      "marco": "M01"
+    },
+    "P03-79": {
+      "id": "P03-79",
+      "nome": "Processo operacional do setor TI",
+      "departamento": "TI",
+      "marco": "M01"
+    }
+  },
+  "cadernos_departamentais": [
+    {
+      "num": "01",
+      "code": "M01",
+      "title": "Governança Tecnológica, Segurança e Infraestrutura de TI",
+      "dept": "Tecnologia da Informação (TI)",
+      "gestor": "Gestão de TI & Suporte Corporativo",
+      "cargo_gestor": "Coordenador de TI e Segurança da Informação",
+      "processos": "P01-79, P02-79, P03-79 (Links, Servidores, CFTV, Chamados e Inventário de TI)",
+      "slices": [
+        [
+          20,
+          31
+        ],
+        [
+          471,
+          486
+        ],
+        [
+          1079,
+          1088
+        ]
+      ]
+    },
+    {
+      "num": "02",
+      "code": "M02",
+      "title": "Célula de Concorrências Públicas, Licitações e Acervo Técnico",
+      "dept": "Licitações e Novos Negócios",
+      "gestor": "Polyana Sodré",
+      "cargo_gestor": "Diretora Administrativa / Gestora de Licitações",
+      "processos": "P01-75 a P05-75 (Editais, Viabilidade, Acervo Técnico, CATs, ARTs e Pregões)",
+      "slices": [
+        [
+          704,
+          709
+        ],
+        [
+          742,
+          760
+        ]
+      ]
+    },
+    {
+      "num": "03",
+      "code": "M03",
+      "title": "Compras, Suprimentos e Homologação de Fornecedores",
+      "dept": "Compras e Suprimentos",
+      "gestor": "Coordenação de Compras e Suprimentos",
+      "cargo_gestor": "Coordenador de Suprimentos",
+      "processos": "P01-80 a P06-80 (Requisições, Cotações, Aprovações, OCs e Follow-up Fornecedores)",
+      "slices": [
+        [
+          51,
+          80
+        ],
+        [
+          519,
+          525
+        ]
+      ]
+    },
+    {
+      "num": "04",
+      "code": "M04",
+      "title": "Financeiro, Contábil e Contas a Pagar",
+      "dept": "Financeiro e Contas a Pagar",
+      "gestor": "Paulo Araujo & Luany Rodrigues",
+      "cargo_gestor": "Gerência Financeira & Coordenação de Contas a Pagar",
+      "processos": "P01-82, P03-54, P01-55, P02-55, P01-53, P02-53, P02-82, P01-54, P02-54, P01-24, P02-24, P03-24",
+      "slices": [
+        [
+          44,
+          50
+        ],
+        [
+          81,
+          140
+        ],
+        [
+          512,
+          518
+        ]
+      ]
+    },
+    {
+      "num": "05",
+      "code": "M05",
+      "title": "Secretaria Executiva e Apoio Administrativo",
+      "dept": "Secretaria e Apoio Administrativo",
+      "gestor": "Secretaria Executiva",
+      "cargo_gestor": "Coordenação de Secretaria e Atendimento Geral",
+      "processos": "P01-78 a P04-78, P04-24 a P11-24, P01-26 (Triagem, Insumos, EPIs e Benefícios)",
+      "slices": [
+        [
+          459,
+          470
+        ],
+        [
+          688,
+          692
+        ]
+      ]
+    },
+    {
+      "num": "06",
+      "code": "M06",
+      "title": "Gestão de Frota, Telemetria e Patrimônio Corporativo",
+      "dept": "Frota e Gestão de Patrimônio",
+      "gestor": "Polyana Sodré & Coordenação de Frotas",
+      "cargo_gestor": "Diretoria Administrativa / Gestão de Ativos",
+      "processos": "P01-85 a P06-85, P59-85 a P62-85 (Telemetria Cobli, Manutenções e Tombamento)",
+      "slices": [
+        [
+          353,
+          365
+        ],
+        [
+          505,
+          511
+        ],
+        [
+          721,
+          728
+        ]
+      ]
+    },
+    {
+      "num": "07",
+      "code": "M07",
+      "title": "Gestão Estratégica de Contratos, Medições e Faturamento",
+      "dept": "Gestão e Controladoria de Contratos",
+      "gestor": "Sr. Vilson Ribeiro",
+      "cargo_gestor": "Diretor Presidente / Gestão Geral de Contratos",
+      "processos": "P01-81 a P02-81, P01-36 a P08-36, P01-35 a P09-35, P01-34 a P05-34, P01-33 a P03-33 (27 Processos)",
+      "slices": [
+        [
+          366,
+          411
+        ]
+      ]
+    },
+    {
+      "num": "08",
+      "code": "M08",
+      "title": "Recursos Humanos, Gente e Gestão (Modelo Greenfield)",
+      "dept": "Recursos Humanos (RH)",
+      "gestor": "Polyana Sodré",
+      "cargo_gestor": "Diretoria Administrativa e Gente & Gestão",
+      "processos": "RH-01 a RH-12 (Recrutamento, Onboarding, Ponto, Folha, Férias e Desligamento)",
+      "slices": [
+        [
+          729,
+          741
+        ]
+      ]
+    },
+    {
+      "num": "09",
+      "code": "M09",
+      "title": "Gestão Socioambiental, Licenciamento e Monitoramento de Fauna/Flora",
+      "dept": "Diretoria Técnica / Meio Ambiente",
+      "gestor": "Coordenação de Meio Ambiente",
+      "cargo_gestor": "Coordenador de Gestão Ambiental",
+      "processos": "P01-32 a P16-32, P50-85 a P58-85 (Campanhas de Campo, RADA, PBA e Licenças LP/LI/LO)",
+      "slices": [
+        [
+          412,
+          445
+        ]
+      ]
+    },
+    {
+      "num": "10",
+      "code": "M10",
+      "title": "Controle Tecnológico, Laboratório de Asfalto/Concreto e Geotecnia",
+      "dept": "Laboratório e Controle Tecnológico",
+      "gestor": "Clayton Santana & Eliel Lima",
+      "cargo_gestor": "Responsáveis Técnicos pelo Laboratório Central",
+      "processos": "P01-42 a P04-42, P03-75, P04-75, P01-50 a P04-50 (Ensaios, Rompimento e Calibração)",
+      "slices": [
+        [
+          693,
+          696
+        ],
+        [
+          710,
+          715
+        ],
+        [
+          761,
+          776
+        ]
+      ]
+    },
+    {
+      "num": "11",
+      "code": "M11",
+      "title": "Escritório de Projetos, Engenharia Consultiva e Sistema Intervia",
+      "dept": "Escritório de Projetos (Sede)",
+      "gestor": "Coordenação do Escritório de Projetos",
+      "cargo_gestor": "Engenheiro Chefe de Projetos Rodoviários",
+      "processos": "P01-76 a P05-76, ESC-PROJ-01 a ESC-PROJ-09 (OAEs, SGE, BIM e Memoriais)",
+      "slices": [
+        [
+          716,
+          720
+        ],
+        [
+          923,
+          939
+        ]
+      ]
+    },
+    {
+      "num": "12",
+      "code": "M12",
+      "title": "Verificação Independente de Concessões Rodoviárias (VI)",
+      "dept": "Verificador Independente",
+      "gestor": "Engenharia de Verificação Independente",
+      "cargo_gestor": "Engenheiro Fiscal de Concessões",
+      "processos": "P01-SINFRA-VI a P05-SINFRA-VI, P01-VI-CAMPO a P06-VI-CAMPO (Pleitos, Reequilíbrio e Campo)",
+      "slices": [
+        [
+          481,
+          504
+        ]
+      ]
+    },
+    {
+      "num": "13",
+      "code": "M13",
+      "title": "Operações Regionais: Contratos SINFRA-MT & AGEHAB-GO",
+      "dept": "Supervisão Rodoviária MT & Habitação GO",
+      "gestor": "Coordenação Regional SINFRA / AGEHAB",
+      "cargo_gestor": "Engenheiro Coordenador Regional",
+      "processos": "P01-17 a P03-17, P01-15, P01-20 a P02-20, P01-19 a P02-19, P01-16 a P03-16, P01-18 a P03-18, P01-47 a P05-47",
+      "slices": [
+        [
+          446,
+          480
+        ],
+        [
+          697,
+          703
+        ]
+      ]
+    },
+    {
+      "num": "14",
+      "code": "M14",
+      "title": "Operações Regionais: Contrato AGETO-TO & Consórcio 3S (OAEs)",
+      "dept": "Supervisão Tocantins & OAEs Consorciais",
+      "gestor": "Coordenação AGETO & Diretoria Consórcio 3S",
+      "cargo_gestor": "Engenheiro Coordenador Contratual",
+      "processos": "AGETO-01 a AGETO-09, 3S-01 a 3S-10 (19 Processos: Malha TO e Pontes de Concreto/Aço)",
+      "slices": [
+        [
+          815,
+          866
+        ],
+        [
+          969,
+          985
+        ]
+      ]
+    },
+    {
+      "num": "15",
+      "code": "M15",
+      "title": "Operações Rodoviárias Federais: Contrato DNIT-MT",
+      "dept": "Supervisão Rodoviária Federal - MT",
+      "gestor": "Coordenação de Contrato DNIT-MT",
+      "cargo_gestor": "Engenheiro Residente / Coordenador DNIT-MT",
+      "processos": "DNIT-MT-01 a DNIT-MT-07 (Cadernos dos Produtos 1 e 2, Curva S, ICM e Não Conformidades)",
+      "slices": [
+        [
+          867,
+          898
+        ]
+      ]
+    },
+    {
+      "num": "16",
+      "code": "M16",
+      "title": "Apoio à Gestão e Supervisão Federal: Contrato DNIT-GO",
+      "dept": "Supervisão e Apoio à Superintendência - GO",
+      "gestor": "Coordenação de Contrato DNIT-GO",
+      "cargo_gestor": "Engenheiro Coordenador de Apoio DNIT-GO",
+      "processos": "DNIT-GO-01 a DNIT-GO-11 (Auditoria das 4 Supervisoras, Licenças, Tráfego e SEI)",
+      "slices": [
+        [
+          899,
+          922
+        ]
+      ]
+    },
+    {
+      "num": "17",
+      "code": "M17",
+      "title": "Supervisão de Obras Públicas & Malha: Contratos SEOSP-RO & DER-MG",
+      "dept": "Obras Públicas RO & Malha Rodoviária MG",
+      "gestor": "Coordenação SEOSP & DER-MG",
+      "cargo_gestor": "Engenheiro Coordenador de Contratos Regionais",
+      "processos": "SEOSP-01 a SEOSP-08, DER-MG-01 a DER-MG-05 (13 Processos: Prédios, Saneamento, 8 Regionais MG)",
+      "slices": [
+        [
+          777,
+          814
+        ]
+      ]
+    },
+    {
+      "num": "18",
+      "code": "M18",
+      "title": "Gerenciamento e Fiscalização Predial: Contrato SEDUC-MT",
+      "dept": "Fiscalização de Obras Escolares - MT",
+      "gestor": "Coordenação SEDUC-MT",
+      "cargo_gestor": "Engenheiro Coordenador de Fiscalização Escolar",
+      "processos": "SEDUC-01 a SEDUC-07 (Matriz GUT de Priorização de Reformas, Usinas Solares e Poços)",
+      "slices": [
+        [
+          940,
+          968
+        ]
+      ]
+    }
+  ],
+  "relatorio_interativo_v120_diagnosticos": [
+    "Diagnóstico de Processos, Eficiência Operacional, Modelagem BPMN e Gestão Estratégica de Contratos"
+  ],
+  "relatorio_v122_departamentos_e_paginas": [
+    {
+      "codigo": "M01",
+      "departamento": "Tecnologia da Informação (TI)",
+      "gestor": "Gestão de TI & Suporte Corporativo",
+      "cargo": "Coordenador de TI e Segurança da Informação",
+      "faixa_paginas_v122": [
+        [
+          20,
+          31
+        ],
+        [
+          471,
+          486
+        ],
+        [
+          1079,
+          1088
+        ]
+      ],
+      "processos_chave": "P01-79, P02-79, P03-79 (Links, Servidores, CFTV, Chamados e Inventário de TI)",
+      "diagnostico_amostra": "2. Impacto nos Processos e Guia de Rollout Contraste Operacional AS-IS vs. TO-BE e Roteiro Tático de Implantação (12 Meses) Página 19 PROCESSO ANALISADO CENÁRIO ATUAL (AS-IS) CENÁRIO FUTURO (TO-BE) Logística e Passagens Solicitações informais por mensagens de voz ou texto em aplicativos de mensagens. Risco de emissão incorreta, esquecimento de trechos e dados incompletos dos passageiros. Adoção obrigatória de Microsoft Forms corporativo gerando cards automáticos no Planner, com histórico auditável e conferência de centro de custo. Suprimentos e Cotações Negociações com fornecedores retidas em ... Tabela de Rollout: InfoSec Corporativo (12 Meses) Cronograma de Implementação Tática Recomendada para a Gestão da RTA Página 20 FASE / PERÍODO (12 MESES) ATIVIDADES E CONFIGURAÇÕES TÉCNICAS ENTREGÁVEIS TÉCNICOS TECNOLOGIAS ENVOLVIDAS Fase 1: Entra ID / MFA (Meses 1 e 2) • Ativação de Múltiplo Fator de Autenticação (MFA) obrigatório para o locatário corporativo. • Criação de Grupos de Segurança Restritos no Azure AD. • Configuração de políticas de acesso condicional bloqueando acessos suspeitos fora do Brasil. Tenant blindado por MFA e grupos de acesso reestruturados. Microsoft Entra ID, Acess ... RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 26 DE 37 ID: P01-17 CONTRATO: 137/2022-SINFRA Jaline Gonçalves Holanda Monteiro (Engenheiro (a) Civil • F17) Triagem e Direcionamento de Demandas da Supervisora e Gerenciadora [R] Executor:Jaline GonçalvesHolanda Monteiro [A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Centralizar, registrar e encaminhar os e-mails e ofícios recebidos da SINFRA, supervisoras e empresas executoras da malha estadual. ▶ ONDE COMEÇA ... RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 27 DE 37 ID: P02-17 CONTRATO: 137/2022-SINFRA Jaline Gonçalves Holanda Monteiro (Engenheiro (a) Civil • F17) Análise de Ordens de Serviço (O.S.) e Aditivos Contratuais [R] Executor:Jaline GonçalvesHolanda Monteiro [A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Avaliar o impacto financeiro, temporal e de escopo de novas Ordens de Serviço e termos aditivos demandados pela SINFRA-MT. ▶ ONDE COMEÇA (Gatilho de Entr"
+    },
+    {
+      "codigo": "M02",
+      "departamento": "Licitações e Novos Negócios",
+      "gestor": "Polyana Sodré",
+      "cargo": "Diretora Administrativa / Gestora de Licitações",
+      "faixa_paginas_v122": [
+        [
+          704,
+          709
+        ],
+        [
+          742,
+          760
+        ]
+      ],
+      "processos_chave": "P01-75 a P05-75 (Editais, Viabilidade, Acervo Técnico, CATs, ARTs e Pregões)",
+      "diagnostico_amostra": "DEEP DIVE TSCOPE: LICITAÇÃO  Eixo 1: Diagnóstico Estrutural O diagnóstico inicial do departamento de Licitação revela uma carga operacional baseada em 5 rotinas catalogadas oficialmente. Constatamos, em conjunto com o mapeamento executivo, que as operações transacionais locais apresentam excesso de micro-validações humanas. Isto eleva drasticamente os riscos processuais, consumindo um volume estratégico de horas que jamais retorna ao caixa da RTA. ⚠ Eixo 2: Impacto Funcional A descentralização de informações, somada ao Handoff ininterrupto, compromete o andamento local. Em caso de absenteísm ... LAUDO INDIVIDUAL DE AUTOMAÇÃO - PROCESSO N. 1 Leitura do Edital e Avaliação de Viabilidade  [R] Executor: Aux. de Engenharia  [A] Aprovador: Gestão Departamental / Diretoria  [C] Consultado: Especialistas & Operação  [I] Informado: Liderança & PMO ☢ Diagnóstico AS-IS (Causa-Raiz) O método AS-IS sustenta-se majoritariamente no trabalho mecânico humano. Esse cenário expõe a empresa a falhas ocultas, extravio logístico de informações, retrabalhos dolorosos e LER (Lesão por Esforço Repetitivo) de natureza puramente administrativa. Na estrutura atual, os analistas ocupam o papel de processador ...  CAPÍTULO 18 • CÉLULA DE CONCORRÊNCIAS PÚBLICAS • RTA Engenharia Regulatória • Nova Lei de Licitações (Lei 14.133/2021) Engenharia de Concorrências • Diagnóstico e Reengenharia TO-BE Captação Estratégica de Editais, Blindagem Habilitatória, Gestão de Acervo Técnico e Governança M365 A célula de Licitações constitui a artéria vital para reposição e crescimento da carteira de contratos da RTA Engenharia em obras rodoviárias, supervisão ambiental e controle tecnológico. Em um mercado balizado pela Lei 14.133/2021 e pelas exigências fiscalizatórias de órgãos como DNIT, ANTT, SINFRA-MT e Goinfra,  ... DIAGNÓSTICO SITUACIONAL 18.1 Radiografia da Operação Atual (AS-IS) • Entrevistas Técnicas Entrevistados: Álvaro Victorio (F75) • Murilo César (F84) Centro de Custo: LICITAÇÃO • RTA  Contexto Operacional Extraído das Sessões de Mapeamento A célula de concorrências públicas atua sob regime de alta pressão cronológica. O volume de editais examinados semanalmente varia de 8 a 15 certames de naturezas heterogêneas (obras rodoviárias, supervisão, ensaios geotécnicos e licenciamento ambiental). As sessões de entrevistas evidenciaram que o setor opera como uma ilha de urgência, absorvendo demandas de"
+    },
+    {
+      "codigo": "M03",
+      "departamento": "Compras e Suprimentos",
+      "gestor": "Coordenação de Compras e Suprimentos",
+      "cargo": "Coordenador de Suprimentos",
+      "faixa_paginas_v122": [
+        [
+          51,
+          80
+        ],
+        [
+          519,
+          525
+        ]
+      ],
+      "processos_chave": "P01-80 a P06-80 (Requisições, Cotações, Aprovações, OCs e Follow-up Fornecedores)",
+      "diagnostico_amostra": "6. Matrizes de Governança (RACI) e Riscos de Negócio (Cont.) Matriz de Riscos de Negócio dos 225 Processos • Pontos Críticos e Poka-Yoke / Mitigação TO-BE (Parte 12 de 33) Riscos • Bloco 12/33 ID PROCESSO MAPEADO CRITICIDADE RISCO OPERACIONAL / GARGALO MAPEADO MITIGAÇÃO PROPOSTA (TO-BE / AUTOMAÇÃO M365) P01-34 ElaboraÃ§Ã£o de minuta GestÃ£o de Contratos 5 - CRÍTICA Extravio de documentos admissionais O uso do WhatsApp em celular pessoal gera perda de documentos e dados vitais para a formulaÃ§Ã£o da minuta contratual. DespadronizaÃ§Ã£o crÃ´nica de entradas O recebimento fragmentado por e-mail e ... ID PROCESSO MAPEADO CRITICIDADE RISCO OPERACIONAL / GARGALO MAPEADO MITIGAÇÃO PROPOSTA (TO-BE / AUTOMAÇÃO M365) Criar fluxos no Power Automate notificando a equipe via Teams quando o SINFRALOG apresentar falhas de sincronizaÃ§Ã£o. RTA Engenheiros Consultores • Relatório consolidado Matriz de Riscos dos 225 Processos • Página 12 de 33 6. Matrizes de Governança (RACI) e Riscos de Negócio (Cont.) Matriz de Riscos de Negócio dos 225 Processos • Pontos Críticos e Poka-Yoke / Mitigação TO-BE (Parte 13 de 33) Riscos • Bloco 13/33 ID PROCESSO MAPEADO CRITICIDADE RISCO OPERACIONAL / GARGALO MAPEADO MIT ... DEEP DIVE TSCOPE: COMPRAS  Eixo 1: Diagnóstico Estrutural O diagnóstico inicial do departamento de Compras revela uma carga operacional baseada em 1 rotinas catalogadas oficialmente. Constatamos, em conjunto com o mapeamento executivo, que as operações transacionais locais apresentam excesso de micro-validações humanas. Isto eleva drasticamente os riscos processuais, consumindo um volume estratégico de horas que jamais retorna ao caixa da RTA. ⚠ Eixo 2: Impacto Funcional A descentralização de informações, somada ao Handoff ininterrupto, compromete o andamento local. Em caso de absenteísmo de ... LAUDO INDIVIDUAL DE AUTOMAÇÃO - PROCESSO N. 1 Solicitações ( requisição)  [R] Executor: Analista de Compras  [A] Aprovador: Gestão Departamental / Diretoria  [C] Consultado: Especialistas & Operação  [I] Informado: Liderança & PMO ☢ Diagnóstico AS-IS (Causa-Raiz) O método AS-IS sustenta-se majoritariamente no trabalho mecânico humano. Esse cenário expõe a empresa a falhas ocultas, extravio logístico de informações, retrabalhos dolorosos e LER (Lesão por Esforço Repetitivo) de natureza puramente administrativa. Na estrutura atual, os analistas ocupam o papel de processadores humanos de dad"
+    },
+    {
+      "codigo": "M04",
+      "departamento": "Financeiro e Contas a Pagar",
+      "gestor": "Paulo Araujo & Luany Rodrigues",
+      "cargo": "Gerência Financeira & Coordenação de Contas a Pagar",
+      "faixa_paginas_v122": [
+        [
+          44,
+          50
+        ],
+        [
+          81,
+          140
+        ],
+        [
+          512,
+          518
+        ]
+      ],
+      "processos_chave": "P01-82, P03-54, P01-55, P02-55, P01-53, P02-53, P02-82, P01-54, P02-54, P01-24, P02-24, P03-24",
+      "diagnostico_amostra": "ID PROCESSO MAPEADO CRITICIDADE RISCO OPERACIONAL / GARGALO MAPEADO MITIGAÇÃO PROPOSTA (TO-BE / AUTOMAÇÃO M365) x Prazo de Entrega x CondiÃ§Ã£o de Pagamento. Entregar a informaÃ§Ã£o prÃ©-mastigada acelera a leitura do decisor e protege o histÃ³rico em caso de auditoria do contrato. DescentralizaÃ§Ã£o de AprovaÃ§Ãµes de Baixo Valor. Autorizar que engenheiros de campo aprovem compras rotineiras ou de pequeno porte (atÃ© um limite X) sem precisar escalar para a diretoria. O foco da lideranÃ§a passa a ser exclusivo em ativos estratÃ©gicos, destravando o gargalo operacional. Fluxo de AprovaÃ§Ã£o Di ... ID PROCESSO MAPEADO CRITICIDADE RISCO OPERACIONAL / GARGALO MAPEADO MITIGAÇÃO PROPOSTA (TO-BE / AUTOMAÇÃO M365) variam de acordo com a classe de fornecimento (ex. Fornecedor de material exige X; Prestador de serviÃ§o exige X + CertidÃµes Trabalhistas). A clareza no primeiro contato evita rejeiÃ§Ãµes futuras no fluxo financeiro. IntegraÃ§Ã£o AutomÃ¡tica via API da Receita Federal. Inserir o CNPJ no sistema aciona uma busca automÃ¡tica (como a do Omie ou via Power Automate) que preenche razÃ£o social, endereÃ§o e situaÃ§Ã£o cadastral instantaneamente. Isso zera erros de digitaÃ§Ã£o de dados mest ... PROCESSO 1 - PÁGINA 4 DE 5 Solicitações ( requisição) (ID: P01-80) Mapeamento TO-BE  Fluxograma de Etapas do Modelo Projetado (TO-BE) O diagrama abaixo mapeia o novo fluxo inteligente desenhado com portões de validação paramétricos (Poka-Yoke): Anotação de Engenharia: O fluxo condicional paralelo garante conformidade tributária automática. Caso a validação falhe, o processo é retido eletronicamente para saneamento. RTA x TSCOPE | Relatório Técnico Consolidado - V58 DECISÃO: Código do insumo consta no cadastro de materiais do ERP Omie? CAMINHO: SIM (FLUXO DE CONFORMIDADE) CAMINHO: NÃO (BLOQUE ... PROCESSO 1 - PÁGINA 5 DE 5 Solicitações ( requisição) (ID: P01-80) Manual de Operação e Stack  Descritivo Passo a Passo da Rotina Automatizada (TO-BE) O fluxo se inicia através do gatilho padrão do processo. O Requisitante atua executando o passo: \"Identifica necessidade de aquisição\". Ação executada sistemicamente via SharePoint/Portal: \"Consulta Catálogo Base de Insumos homologados\". Ação executada sistemicamente via Microsoft Forms: \"Preenche formulário estruturado de requisição\". O Sistema Automatizado avança realizando a ação \"Valida preenchimento de campos obrigatórios\", com suporte da "
+    },
+    {
+      "codigo": "M05",
+      "departamento": "Secretaria e Apoio Administrativo",
+      "gestor": "Secretaria Executiva",
+      "cargo": "Coordenação de Secretaria e Atendimento Geral",
+      "faixa_paginas_v122": [
+        [
+          459,
+          470
+        ],
+        [
+          688,
+          692
+        ]
+      ],
+      "processos_chave": "P01-78 a P04-78, P04-24 a P11-24, P01-26 (Triagem, Insumos, EPIs e Benefícios)",
+      "diagnostico_amostra": "RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 14 DE 37 ID: P05-32 CONTRATO: 137/2022-SINFRA Tiago Altobelle da Silva Siqueira (Engenheiro (a) Ambiental • F32) Geoprocessamento e Espacialização de Dados de Rodovias [R] Executor:Tiago Altobelle da SilvaSiqueira [A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Plotar pontos críticos, obras-de-arte especiais e faixas de domínio em mapas georreferenciados (Shapefile/KMZ) para envio à SINFRA. ▶ ONDE COMEÇA (Gatilh ... RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 15 DE 37 ID: P06-32 CONTRATO: 137/2022-SINFRA Tiago Altobelle da Silva Siqueira (Engenheiro (a) Ambiental • F32) Revisão por Pares e Aprovação do Relatório Técnico Final [R] Executor:Tiago Altobelle da SilvaSiqueira [A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Submeter o laudo à conferência sênior de engenharia antes do envio formal ao órgão governamental. ▶ ONDE COMEÇA (Gatilho de Entrada): Disponibilização  ... DEEP DIVE TSCOPE: SECRETARIA  Eixo 1: Diagnóstico Estrutural O diagnóstico inicial do departamento de Secretaria revela uma carga operacional baseada em 4 rotinas catalogadas oficialmente. Constatamos, em conjunto com o mapeamento executivo, que as operações transacionais locais apresentam excesso de micro-validações humanas. Isto eleva drasticamente os riscos processuais, consumindo um volume estratégico de horas que jamais retorna ao caixa da RTA. ⚠ Eixo 2: Impacto Funcional A descentralização de informações, somada ao Handoff ininterrupto, compromete o andamento local. Em caso de absenteí ... LAUDO INDIVIDUAL DE AUTOMAÇÃO - PROCESSO N. 1 Consultar CNPJ  [R] Executor: Aux. Administrativo  [A] Aprovador: Gestão Departamental / Diretoria  [C] Consultado: Especialistas & Operação  [I] Informado: Liderança & PMO ☢ Diagnóstico AS-IS (Causa-Raiz) O método AS-IS sustenta-se majoritariamente no trabalho mecânico humano. Esse cenário expõe a empresa a falhas ocultas, extravio logístico de informações, retrabalhos dolorosos e LER (Lesão por Esforço Repetitivo) de natureza puramente administrativa. Na estrutura atual, os analistas ocupam o papel de processadores humanos de dados, bloquean"
+    },
+    {
+      "codigo": "M06",
+      "departamento": "Frota e Gestão de Patrimônio",
+      "gestor": "Polyana Sodré & Coordenação de Frotas",
+      "cargo": "Diretoria Administrativa / Gestão de Ativos",
+      "faixa_paginas_v122": [
+        [
+          353,
+          365
+        ],
+        [
+          505,
+          511
+        ],
+        [
+          721,
+          728
+        ]
+      ],
+      "processos_chave": "P01-85 a P06-85, P59-85 a P62-85 (Telemetria Cobli, Manutenções e Tombamento)",
+      "diagnostico_amostra": "9. Painel de Controle Gerencial (Executive Dashboard) Esta seção reproduz de forma resumida o painel interativo (Power BI) construído para a governança do projeto. O painel atua monitorando o avanço físico do contrato e as causas de dores acumuladas. 13 COLABORADORES NO ESCOPO 77% COBERTURA DE ENTREVISTAS 42 PROCESSOS MAPEADOS 124 OPORTUNIDADES DE RPA/MELHORIA ~274h HORAS POUPADAS / MÊS R$ 17,8k ECONOMIA MENSAL EST. Gráficos de Governança Operacional Gráfico de Pareto: Dores e Gargalos (AS-IS) 35% Retrabalho 28% Ctrl. Manual 18% Zap Tax 12% Handoffs Gráfico de Esforço por Nível Hierárquico ... 10. Governança de Mudança e Capacitação Corporativa - Página 1 de 3 Plano de Comunicação e Gestão de Stakeholders A reengenharia de processos e a introdução da hiperautomação alteram profundamente o cotidiano dos colaboradores da RTA. Para mitigar atritos e assegurar uma transição fluida, estruturamos um **Plano de Gestão de Mudança Organizacional (Change Management)** pautado no modelo ADKAR (Awareness, Desire, Knowledge, Ability, Reinforcement). A comunicação será descentralizada através de reuniões quinzenais de demonstração prática (Show & Tell), lideradas pelos gerentes imediatos. O obj ... DEEP DIVE TSCOPE: FROTA  Eixo 1: Diagnóstico Estrutural O diagnóstico inicial do departamento de Frota revela uma carga operacional baseada em 6 rotinas catalogadas oficialmente. Constatamos, em conjunto com o mapeamento executivo, que as operações transacionais locais apresentam excesso de micro-validações humanas. Isto eleva drasticamente os riscos processuais, consumindo um volume estratégico de horas que jamais retorna ao caixa da RTA. ⚠ Eixo 2: Impacto Funcional A descentralização de informações, somada ao Handoff ininterrupto, compromete o andamento local. Em caso de absenteísmo de col ... LAUDO INDIVIDUAL DE AUTOMAÇÃO - PROCESSO N. 1 Compilação e análise de dados (Confecção de relatório)  [R] Executor: Logistica  [A] Aprovador: Gestão Departamental / Diretoria  [C] Consultado: Especialistas & Operação  [I] Informado: Liderança & PMO ☢ Diagnóstico AS-IS (Causa-Raiz) O método AS-IS sustenta-se majoritariamente no trabalho mecânico humano. Esse cenário expõe a empresa a falhas ocultas, extravio logístico de informações, retrabalhos dolorosos e LER (Lesão por Esforço Repetitivo) de natureza puramente administrativa. Na estrutura atual, os analistas ocupam o papel de processado"
+    },
+    {
+      "codigo": "M07",
+      "departamento": "Gestão e Controladoria de Contratos",
+      "gestor": "Sr. Vilson Ribeiro",
+      "cargo": "Diretor Presidente / Gestão Geral de Contratos",
+      "faixa_paginas_v122": [
+        [
+          366,
+          411
+        ]
+      ],
+      "processos_chave": "P01-81 a P02-81, P01-36 a P08-36, P01-35 a P09-35, P01-34 a P05-34, P01-33 a P03-33 (27 Processos)",
+      "diagnostico_amostra": "7-Funding Eletrônico PagCorp Mapeamento de fluxo específico. Representação gráfica de etapas, integrações e nós de decisão, formatada em layout horizontal para máxima legibilidade. RTA x TSCOPE | Relatório Técnico Consolidado - V58 RTA x TSCOPE | Relatório Técnico Consolidado - Página 335 ... 8-Emissão de Guias ISS Mapeamento de fluxo específico. Representação gráfica de etapas, integrações e nós de decisão, formatada em layout horizontal para máxima legibilidade. RTA x TSCOPE | Relatório Técnico Consolidado - V58 RTA x TSCOPE | Relatório Técnico Consolidado - Página 336"
+    },
+    {
+      "codigo": "M08",
+      "departamento": "Recursos Humanos (RH)",
+      "gestor": "Polyana Sodré",
+      "cargo": "Diretoria Administrativa e Gente & Gestão",
+      "faixa_paginas_v122": [
+        [
+          729,
+          741
+        ]
+      ],
+      "processos_chave": "RH-01 a RH-12 (Recrutamento, Onboarding, Ponto, Folha, Férias e Desligamento)",
+      "diagnostico_amostra": " GOVERNANÇA DE PESSOAS • RTA ENGENHARIA Framework Oficial RH.docx • Exclusivo TO-BE Capítulo de Recursos Humanos • Modelo Oficial TO-BE Engenharia de Processos de Pessoas & Departamento Pessoal 4.0 Integrados ao Microsoft 365 e Inteligência Artificial Apresentação formal dos 12 processos operacionais de RH ancorados estritamente no documento de referência RH.docx. Como a RTA Engenharia não possui um departamento formal prévio de RH, a modelagem é estruturada exclusivamente no cenário futuro (TO-BE), detalhando todos os portões de decisão lógicos, ecossistema M365 (Forms, Power Apps, Power Aut ... RH-TOBE-01 FLUXO EXCLUSIVO TO-BE 1. Recrutamento e Seleção (Atração de Talentos) PARTE I: Ciclo de Vida do Colaborador (Gente & Gestão) Ancorado em RH.docx  OBJETIVO ESTRATÉGICO Automatizar a triagem de candidatos, ranqueamento por aderência de competências, agendamento automatizado de entrevistas e redução drástica do Time-to-Hire sem sobrecarga das lideranças operacionais.  INTERFACES & ECOSSISTEMA M365 Microsoft Forms público integrado ao site/LinkedIn da empresa para cadastro de vagas e upload de currículos em formato PDF; Microsoft SharePoint Online para gestão do pipeline de candidatos"
+    },
+    {
+      "codigo": "M09",
+      "departamento": "Diretoria Técnica / Meio Ambiente",
+      "gestor": "Coordenação de Meio Ambiente",
+      "cargo": "Coordenador de Gestão Ambiental",
+      "faixa_paginas_v122": [
+        [
+          412,
+          445
+        ]
+      ],
+      "processos_chave": "P01-32 a P16-32, P50-85 a P58-85 (Campanhas de Campo, RADA, PBA e Licenças LP/LI/LO)",
+      "diagnostico_amostra": "RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL CAPÍTULO 15 • PÁGINA 15 DE 17 RECUPERAÇÃO DE ATIVOS E CAIXA FUTURO 15.15. Gestão de Retenções Técnicas (TRD) e Blindagem de Caixa Futuro Em obras públicas e contratos privados de supervisão, os clientes retêm entre 5% e 10% do valor bruto faturado a título de caução de garantia técnica. Historicamente, parte desses valores corria risco de esquecimento após a conclusão da obra.  Ciclo de Vida e Resgate Patrimonial das Retenções Técnicas 1. Retenção na Fonte Dedução automática no pagamento de cada medição. → 2. Registro no BI Acúmul ... RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL CAPÍTULO 15 • PÁGINA 16 DE 17 PLANO DE AÇÃO E ROADMAP EXECUTIVO 15.16. Cronograma de Implantação (5 Semanas) e Ações Imediatas O plano de execução da TSCOPE está estruturado em 5 semanas consecutivas para colocar a governança em operação imediata, garantindo que toda a arquitetura de dados seja 100% reaproveitada na futura migração para o TOTVS.  Roadmap de Implantação das 5 Semanas SEMANA ENTREGÁVEIS TÉCNICOS DA TSCOPE AÇÃO REQUERIDA DA RTA Semana 1 Criação das Listas SharePoint M365 (Star Schema) e concessão de permissões. TI li"
+    },
+    {
+      "codigo": "M10",
+      "departamento": "Laboratório e Controle Tecnológico",
+      "gestor": "Clayton Santana & Eliel Lima",
+      "cargo": "Responsáveis Técnicos pelo Laboratório Central",
+      "faixa_paginas_v122": [
+        [
+          693,
+          696
+        ],
+        [
+          710,
+          715
+        ],
+        [
+          761,
+          776
+        ]
+      ],
+      "processos_chave": "P01-42 a P04-42, P03-75, P04-75, P01-50 a P04-50 (Ensaios, Rompimento e Calibração)",
+      "diagnostico_amostra": "DEEP DIVE TSCOPE: LABORATÓRIO  Macroprocesso Geotécnico & Engenharia de Ensaios (Laboratório Central - Goiânia) O Laboratório de Geotecnia e Pavimentação da RTA constitui a viga-mestra para a garantia de conformidade técnica e aprovação de medições contratuais perante concessionárias e órgãos reguladores (DNIT, DER e Goinfra). Sua cadeia operacional abrange desde a concepção do plano de sondagem, execução de coletas em campo e ensaios destrutivos e não destrutivos de bancada, até a compilação matemática e emissão dos laudos geotécnicos consolidados.  Cadeia de Valor: [Demanda / Traçado Geom ... GARGALO / CAUSA RAIZ AS- IS IMPACTOS & RISCOS NA OPERAÇÃO SOLUÇÃO DE ENGENHARIA TSCOPE (TO- BE) Coleta manual e papel no campo: Boletins em papel, fotos avulsas em WhatsApp e percurso GPX segregado no Geotracker. Risco de extravio e rasura por intempéries, fotos compactadas sem carimbo georreferenciado e apontamentos de auditoria TCU/TCE. App Coleta Mobile (Power Apps): Formulário paramétrico com GPS obrigatório, carimbo automático nas fotos, etiqueta com QR Code à prova d'água e sincronização em nuvem. Digitação massiva (~450 linhas/lote): Transcrição de fichas de bancada para planilhas Excel ... DEEP DIVE TSCOPE: CONTROLE TECNOLÓGICO  Eixo 1: Diagnóstico Estrutural O diagnóstico inicial do departamento de Controle tecnológico revela uma carga operacional baseada em 5 rotinas catalogadas oficialmente. Constatamos, em conjunto com o mapeamento executivo, que as operações transacionais locais apresentam excesso de micro-validações humanas. Isto eleva drasticamente os riscos processuais, consumindo um volume estratégico de horas que jamais retorna ao caixa da RTA. ⚠ Eixo 2: Impacto Funcional A descentralização de informações, somada ao Handoff ininterrupto, compromete o andamento local. ... LAUDO INDIVIDUAL DE AUTOMAÇÃO - PROCESSO N. 1 Elaboração da Proposta Técnica  [R] Executor: Engenheiro (a) Civil  [A] Aprovador: Gestão Departamental / Diretoria  [C] Consultado: Especialistas & Operação  [I] Informado: Liderança & PMO ☢ Diagnóstico AS-IS (Causa-Raiz) Como a estruturação da proposta técnica é complexa, raros profissionais possuem o conhecimento necessário para executá-la.  Arquitetura Proposta (Solução TSCOPE) Ação Tecnológica: Desenvolver um aplicativo no Power Apps para somar automaticamente a pontuação de profissionais com base nas exigências Valor Agregado e Conformi"
+    },
+    {
+      "codigo": "M11",
+      "departamento": "Escritório de Projetos (Sede)",
+      "gestor": "Coordenação do Escritório de Projetos",
+      "cargo": "Engenheiro Chefe de Projetos Rodoviários",
+      "faixa_paginas_v122": [
+        [
+          716,
+          720
+        ],
+        [
+          923,
+          939
+        ]
+      ],
+      "processos_chave": "P01-76 a P05-76, ESC-PROJ-01 a ESC-PROJ-09 (OAEs, SGE, BIM e Memoriais)",
+      "diagnostico_amostra": "DEEP DIVE TSCOPE: INTERVIA  Eixo 1: Diagnóstico Estrutural O diagnóstico inicial do departamento de Intervia revela uma carga operacional baseada em 4 rotinas catalogadas oficialmente. Constatamos, em conjunto com o mapeamento executivo, que as operações transacionais locais apresentam excesso de micro-validações humanas. Isto eleva drasticamente os riscos processuais, consumindo um volume estratégico de horas que jamais retorna ao caixa da RTA. ⚠ Eixo 2: Impacto Funcional A descentralização de informações, somada ao Handoff ininterrupto, compromete o andamento local. Em caso de absenteísmo  ... LAUDO INDIVIDUAL DE AUTOMAÇÃO - PROCESSO N. 1 Recebimento e Distribuição de Inspeções  [R] Executor: Engenheiro (a) Civil  [A] Aprovador: Gestão Departamental / Diretoria  [C] Consultado: Especialistas & Operação  [I] Informado: Liderança & PMO ☢ Diagnóstico AS-IS (Causa-Raiz) O fato de as empresas terceiras não usarem o ecossistema da Microsoft força um processo paralelo e ineficiente de comunicação.  Arquitetura Proposta (Solução TSCOPE) Ação Tecnológica: Virtualização estrutural completa com Formulários paramétricos via Microsoft Power Apps. O ciclo processará informações nativamente  ... MEMÓRIA TÉCNICA DE EXTRAÇÃO DE DADOS DE PROCESSOS E MATRIZES RACI DEPARTAMENTO: ESCRITÓRIO DE PROJETOS (SEDE GOIÂNIA / MULTICONTRATOS) Projeto: Automação e Otimização de Processos RTA Engenharia Data das Reuniões de Discovery: 14, 15, 17 e 21 de Setembro de 2026 Duração Total Auditada: 5h 24m 35s (4 sessões técnicas em profundidade) Fontes Oficiais Analisadas (Arquivos Brutos): 1. Reunião 1 (14/09/2026 - 1h 27m 27s): Transcrição: C:\\Users\\lucas\\OneDrive\\Documents\\Empreendimentos\\Tscope\\Projeto RTA\\Dev_antigravity\\Esc projetos\\Reunião 1.docx Gravação Oficial: C:\\Users\\lucas\\OneDrive\\Documents\\E ... Código Macroprocesso Operacional Disciplina Técnica Envolvida Principais Responsáveis CriticidadeEvidências no Discovery ESC-PROJ-01Estudo de Tráfego: Cálculo de Número N e Nível de Serviço Estudos de Tráfego Samuel Filipe / GabrielCorreia ALTA Reunião 1: [12:34] - [44:48] ESC-PROJ-02 Mapeamento Espacial de Acidentes e Geração de Mapas Temáticos Segurança Viária Samuel Filipe / GabrielCorreia MÉDIA Reunião 1: [45:14] - [55:40] ESC-PROJ-03 Distribuição de Massa de Terraplenagem e Diagrama de Bruckner Terraplenagem e Geometria Samuel Filipe / Cauê Mota CRÍTICA Reunião 1: [1:01:08] -[1:23:07] ESC"
+    },
+    {
+      "codigo": "M12",
+      "departamento": "Verificador Independente",
+      "gestor": "Engenharia de Verificação Independente",
+      "cargo": "Engenheiro Fiscal de Concessões",
+      "faixa_paginas_v122": [
+        [
+          481,
+          504
+        ]
+      ],
+      "processos_chave": "P01-SINFRA-VI a P05-SINFRA-VI, P01-VI-CAMPO a P06-VI-CAMPO (Pleitos, Reequilíbrio e Campo)",
+      "diagnostico_amostra": "RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 36 DE 37 ID: P01-VICONTRATO: SINFRA-MT - 004/2025 - VERIFICADOR INDEPENDENTE Rafael Victor de Sousa Braga (Engenheiro Civil • F04) Aferição de Indicadores de Desempenho e Auditoria Contratual Independente [R] Executor:Rafael Victor de SousaBraga [A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Realizar auditoria técnica independente sobre a execução contratual da concessionária rodoviária e atestar o cumprimento  ... RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 37 DE 37 ID: P02-VICONTRATO: SINFRA-MT - 006/2025 - VERIFICADOR INDEPENDENTE LOTE 01 Tatiane Estevam Pereira (Engenheiro (a) Civil • F05) Vistoria de Campo e Auditoria Amostral de Obras e Pavimentação [R] Executor:Tatiane Estevam Pereira[A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Auditar in loco se as obras de restauração e conservação executadas na concessão rodoviária cumprem as normas ABNT/DNIT e ocaderno"
+    },
+    {
+      "codigo": "M13",
+      "departamento": "Supervisão Rodoviária MT & Habitação GO",
+      "gestor": "Coordenação Regional SINFRA / AGEHAB",
+      "cargo": "Engenheiro Coordenador Regional",
+      "faixa_paginas_v122": [
+        [
+          446,
+          480
+        ],
+        [
+          697,
+          703
+        ]
+      ],
+      "processos_chave": "P01-17 a P03-17, P01-15, P01-20 a P02-20, P01-19 a P02-19, P01-16 a P03-16, P01-18 a P03-18, P01-47 a P05-47",
+      "diagnostico_amostra": "RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 1 DE 37 ID: P01-42 CONTRATO: Controle Tecnológico Bruno de Carvalho Farias Fonseca (Aux. de Engenharia • F42) Recebimento de Demanda e Planejamento de Campo [R] Executor:Bruno de CarvalhoFarias Fonseca [A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Recepcionar solicitações de ensaios e caracterização de materiais de obras e clientes, avaliar escopo normativo e planejar a rota eequipamentos necessários. ▶ ONDE C ... RTA ENGENHARIA • DOSSIÊ EXECUTIVO DE TRANSFORMAÇÃO OPERACIONAL ÁREAS TÉCNICAS • PROCESSO 2 DE 37 ID: P02-42 CONTRATO: Controle Tecnológico Bruno de Carvalho Farias Fonseca (Aux. de Engenharia • F42) Coleta de Dados e Ensaios In Situ em Campo [R] Executor:Bruno de CarvalhoFarias Fonseca [A] Aprovador:Coordenação Técnica[C] Consultado:Fiscalização &Órgãos [I] Informado:Diretoria & Cliente  O QUE É E QUAL O OBJETIVO ESTRATÉGICO: Executar coletas de amostras de solos/pavimento e aferições de ensaios físicos e visuais diretamente no canteiro de obras rodoviárias. ▶ ONDE COMEÇA (Gatilho de Entrada) ... DEEP DIVE TSCOPE: AGEHAB  Eixo 1: Diagnóstico Estrutural O diagnóstico inicial do departamento de AGEHAB revela uma carga operacional baseada em 6 rotinas catalogadas oficialmente. Constatamos, em conjunto com o mapeamento executivo, que as operações transacionais locais apresentam excesso de micro-validações humanas. Isto eleva drasticamente os riscos processuais, consumindo um volume estratégico de horas que jamais retorna ao caixa da RTA. ⚠ Eixo 2: Impacto Funcional A descentralização de informações, somada ao Handoff ininterrupto, compromete o andamento local. Em caso de absenteísmo de c ... LAUDO INDIVIDUAL DE AUTOMAÇÃO - PROCESSO N. 1 Relatório Fotográfico (AGEHAB)  [R] Executor: Aux. de Engenharia  [A] Aprovador: Gestão Departamental / Diretoria  [C] Consultado: Especialistas & Operação  [I] Informado: Liderança & PMO ☢ Diagnóstico AS-IS (Causa-Raiz) O uso de Access e planilhas offline causa instabilidade recorrente durante o fechamento de relatórios. O diagrama demonstra um processo longo e operacionalmente cansativo, resultando em atrasos na documentação.  Arquitetura Proposta (Solução TSCOPE) Ação Tecnológica: Geração direta de PDF. Substituir as planilhas e MS Access "
+    },
+    {
+      "codigo": "M14",
+      "departamento": "Supervisão Tocantins & OAEs Consorciais",
+      "gestor": "Coordenação AGETO & Diretoria Consórcio 3S",
+      "cargo": "Engenheiro Coordenador Contratual",
+      "faixa_paginas_v122": [
+        [
+          815,
+          866
+        ],
+        [
+          969,
+          985
+        ]
+      ],
+      "processos_chave": "AGETO-01 a AGETO-09, 3S-01 a 3S-10 (19 Processos: Malha TO e Pontes de Concreto/Aço)",
+      "diagnostico_amostra": "MEMÓRIA TÉCNICA DE EXTRAÇÃO DE DADOS, FLUXOS E GOVERNANÇA: AGETO Documento: Memória de Engenharia de Processos, Levantamento de Requisitos e Matriz RACI Projeto: RTA Engenharia / Tscope Consultoria Objeto: Contrato de Supervisão e Gerenciamento Rodoviário da Agência de Transportes, Obras e Infraestrutura (AGETO - Tocantins) Fonte Primária Oficial: Gravação Audiovisual Integral (ENTREVISTA AGETO - DESCOBERTA DE ROTINAS-20260910_141208- Gravação de Reunião.mp4) e Transcrição Oficial (ENTREVISTA AGETO - DESCOBERTA DE ROTINAS .docx) Data da Sessão: 10 de setembro de 2026 Duração Efetiva da Sessão: ... Tabela Cruzada Exaustiva: Produtos Contratuais vs. Macroprocessos Reais Item / Produto Formal Denominação Contratual no Edital Status Operacional Real no Contrato Rastreabilidade no Vídeo/Transcrição Macroprocesso Operacional Correspondente Produto 1 Relatório de Acompanhamento da Coordenação Geral (Gestão Contratual & OS) Ativo Mensal (Elaborado 2x ao mês: Lote 1 e Lote 4) [29:21], [34:57], [39:46], [40:12] AGETO-01: Gestão de Ordens de Serviço e Consolidação da Coordenação Geral Produto 2 Relatório de Inspeção e Condição da Malha Rodoviária (Pavimentada e Não Pav.) Ativo Mensal (Rotina contí ... MEMÓRIA TÉCNICA DE EXTRAÇÃO DE DADOS:CONSÓRCIO 3S (SINFRA-MT) Projeto: Automação, Engenharia de Processos e Governança Operacional RTA Engenharia Objeto: Contrato de Supervisão, OAE (Pontes), Projetos e Gestão de Obras Rodoviárias e Civis (SINFRA-MT) Duração Total Auditada: 4h 44m 21s (4 sessões técnicas exaustivas em vídeo e transcrição) Participantes Auditados: José Roberto Sodré Júnior (Coordenador Geral / Gestor Técnico), Raul (Engenheiro Estrutural /Calculista), Polyana Sodré (Engenheira Civil / Projetos e Orçamentos), Fernanda, Isabel e Renata (Engenharia de Apoio / Medições / Relatórios ... CódigoProduto / EscopoContratual Denominação do MacroprocessoResponsáveis CriticidadeRastreabilidadePrimária 3S-08 Base de DadosContratual e Financeira Gestão de InformaçõesContratuais, Diário Oficial eFIPLAN Fernanda / JoséRoberto Sodré Jr. ALTA 3s 2: [17:08] - [26:17] 3S-09 Curva S e Cronogramade Obras Controle do Avanço Físico-Financeiro e Curva S das Obras Fernanda / Isabel /José Roberto MÉDIA 3s 2: [26:32] - [28:39],3s 1: [40:43] 3S-10 Relatório MensalConsolidado doConsórcio Consolidação e Emissão doRelatório Mensal em 4 Partes(Anexo 4) Fernanda / Isabel /Coordenação ALTA 3s 2: [41:52] - "
+    },
+    {
+      "codigo": "M15",
+      "departamento": "Supervisão Rodoviária Federal - MT",
+      "gestor": "Coordenação de Contrato DNIT-MT",
+      "cargo": "Engenheiro Residente / Coordenador DNIT-MT",
+      "faixa_paginas_v122": [
+        [
+          867,
+          898
+        ]
+      ],
+      "processos_chave": "DNIT-MT-01 a DNIT-MT-07 (Cadernos dos Produtos 1 e 2, Curva S, ICM e Não Conformidades)",
+      "diagnostico_amostra": "MEMÓRIA TÉCNICA DE EXTRAÇÃO DE DADOS, FLUXOS E GOVERNANÇA: DNIT/MT Documento: Memória de Engenharia de Processos, Levantamento de Requisitos e Matriz RACI Projeto: RTA Engenharia / Tscope Consultoria Objeto: Contratos de Supervisão e Apoio à Fiscalização de Rodovias Federais (DNIT - Superintendência Regional no Estado de Mato Grosso) Fonte Primária Oficial: Gravação Audiovisual Integral (DISCOVERY DNIT-MT-20260914_153453-Gravação de Reunião.mp4) e Transcrição Oficial (DISCOVERY DNIT-MT.docx) Data da Sessão: 14 de setembro de 2026 Duração da Sessão: 1 hora, 13 minutos e 49 segundos Participante ... Tabela Cruzada Exaustiva: Produtos Contratuais vs. Macroprocessos Reais Item / Produto Formal Denominação Contratual no Edital/Contrato Status Operacional Real no Contrato Rastreabilidade no Vídeo/Transcrição Macroprocesso Operacional Correspondente Produto 1 Relatório Mensal de Supervisão da Execução e Gestão Administrativo-Financeira Ativo Mensal (Consolidação do contrato de supervisão RTA) [10:07], [22:38 - 25:48], [44:01 - 46:36], [1:00:45 - 1:01:47] DNIT-MT-01: Gestão Administrativo-Financeira, Empenhos e Caderno do Produto 1 Produto 2 Relatório Mensal de Acompanhamento Físico- Financeiro"
+    },
+    {
+      "codigo": "M16",
+      "departamento": "Supervisão e Apoio à Superintendência - GO",
+      "gestor": "Coordenação de Contrato DNIT-GO",
+      "cargo": "Engenheiro Coordenador de Apoio DNIT-GO",
+      "faixa_paginas_v122": [
+        [
+          899,
+          922
+        ]
+      ],
+      "processos_chave": "DNIT-GO-01 a DNIT-GO-11 (Auditoria das 4 Supervisoras, Licenças, Tráfego e SEI)",
+      "diagnostico_amostra": "MEMÓRIA TÉCNICA DE EXTRAÇÃO DE DADOS,FLUXOS E GOVERNANÇA SUPERINTENDÊNCIA REGIONAL DO DNIT NO ESTADO DE GOIÁS (DNIT/GO) Projeto: Automação e Otimização de Processos RTA Engenharia / Tscope ConsultoriaData das Reuniões de Discovery: 18 e 21 de Setembro de 2026 | Duração Total Auditada: 4h 21m 42s (3 sessões técnicas) Participantes Oficiais: Danielle Santiago de Paula, Fernando Côrtes, Patrícia Ribeiro Martins, Júlia Castro Santos, LetyciaEsteves, Marcelo de Castro Santos e João Trevisan (Líder de Inovação). 1. INTRODUÇÃO E CONTEXTO OPERACIONAL DO DNIT/GO A equipe da RTA Engenharia sediada em Go ... CÓDIGO PRODUTO CONTRATUAL CORRESPONDENTE DENOMINAÇÃO OPERACIONAL DO MACROPROCESSO RESPONSÁVEIS CRITICIDADE DNIT-GO-06 Produto 5 - Controle Tecnológico Controle Tecnológico e EnsaiosLaboratoriais Equipe de Laboratório /Danielle Alta DNIT-GO-07 Produto 6 - Comunicação Social(Clipping) Monitoramento de Mídia, ClippingRodoviário e Curadoria Noticiosa Júlia Castro Santos /Giovana Alta DNIT-GO-08 Produto 6 - Comunicação Social(Imprensa) Gestão de Demandas de Imprensa eApoio a Eventos Institucionais Júlia Castro Santos /Giovana Alta DNIT-GO-09 Produto 7 - Apoio Jurídico eDesapropriações Apoio Técnico"
+    },
+    {
+      "codigo": "M17",
+      "departamento": "Obras Públicas RO & Malha Rodoviária MG",
+      "gestor": "Coordenação SEOSP & DER-MG",
+      "cargo": "Engenheiro Coordenador de Contratos Regionais",
+      "faixa_paginas_v122": [
+        [
+          777,
+          814
+        ]
+      ],
+      "processos_chave": "SEOSP-01 a SEOSP-08, DER-MG-01 a DER-MG-05 (13 Processos: Prédios, Saneamento, 8 Regionais MG)",
+      "diagnostico_amostra": "CAPÍTULO 20 • CONTRATO SEOSP (RONDÔNIA) • RTA CIS • CSB • Convênios • Mapeamento • 8 Processos Homologados Gestão Integrada, Supervisão de Obras e Engenharia de Processos Reengenharia dos Entregáveis Contratuais (Produtos 1 a 6) e Novos Módulos Estruturantes de Dados A RTA Engenharia desempenha papel estratégico na gestão e fiscalização de obras do Estado de Rondônia através do contrato firmado com a Secretaria de Estado de Obras e ServiçosPúblicos (SEOSP). A operação atua em regime simultâneo de gerenciamento consultivo de contratos e supervisão técnica in loco em edificações públicas (CIS),  ... DIAGNÓSTICO SITUACIONAL • SEOSP 20.1 Radiografia da Operação SEOSP (AS-IS) • Dupla JornadaContratual Entrevistados: Paulo Roberto (Coordenador) • Bárbara Cecílio(Gestão de Dados)Coordenação Local: Polyana Sodré • Gestão do Contrato: JoãoTrevisan Contextualização Institucional e Fronteiras de Atuação A RTA Engenharia mantém contrato de prestação de serviços técnicos especializados com a Secretaria de Estado de Obras e Serviços Públicos de Rondônia (SEOSP). Conforme validado e homologadonas sessões de aprovação com a coordenação e fiscalização estadual, a equipe atua em regime de dupla jornada n"
+    },
+    {
+      "codigo": "M18",
+      "departamento": "Fiscalização de Obras Escolares - MT",
+      "gestor": "Coordenação SEDUC-MT",
+      "cargo": "Engenheiro Coordenador de Fiscalização Escolar",
+      "faixa_paginas_v122": [
+        [
+          940,
+          968
+        ]
+      ],
+      "processos_chave": "SEDUC-01 a SEDUC-07 (Matriz GUT de Priorização de Reformas, Usinas Solares e Poços)",
+      "diagnostico_amostra": "MEMÓRIA TÉCNICA DE EXTRAÇÃO DE DADOS, FLUXOS E GOVERNANÇA: SEDUC Documento: Memória de Engenharia de Processos, Levantamento de Requisitos e Matriz RACI Projeto: RTA Engenharia / Tscope Consultoria Objeto: Contrato de Gerenciamento da Secretaria de Estado da Educação de Rondônia (SEDUC) Fonte Primária Oficial: Gravação Audiovisual Integral (DISCOVERY SEDUC-20260911_150235-Gravação de Reunião.mp4) e Transcrição Oficial (transcrião DISCOVERY SEDUC.docx) Data da Sessão: 11 de setembro de 2026 Duração da Gravação: 1 hora, 53 minutos e 56 segundos Participantes Auditados: * Lucas Trevisan (Consulto ... Entradas: Processo-Mãe, Processos-Filhos, Termos de Empenho em PDF, Termos de Convênio e Descentralização. Saídas: Planilha de Controle Contratual saneada, Painel de Contratos no Power BI e Alertas de Limite de Saldo de Empenho (Insumo para P1 e P3). 16/09/2026, 23:09 Memória Técnica de Extração de Dados - SEDUC file:///C:/Users/lucas/OneDrive/Documents/Empreendimentos/Tscope/Projeto%20RTA/Dev_antigravity/extra%C3%A7%C3%A3o%20de%20dad… 2/29RTA x TSCOPE | Relatório Técnico Consolidado - Página 910"
+    }
+  ],
+  "sumario_executivo_v122": "DOCUMENTO TÉCNICO OFICIAL\nVersão Consolidada • 2026\nENGENHARIA DE PROCESSOS • DIAGNÓSTICO CORPORATIVO\nRelatório Técnico\nConsolidado\nORGANIZAÇÃO: RTA Engenheiros Consultores\nABRANGÊNCIA: 26 Departamentos Corporativos e Contratos Regionais\nPROCESSOS: 225 Processos Mapeados e Analisados\nELABORAÇÃO: TSCOPE • Consultoria e Tecnologia\nDestinatário: Diretoria Executiva e Gestores Técnicos\nLocalidade: Cuiabá / MT • Goiânia / GO\nOutubro / 2026\nEmissão Final Homologada\n RELATÓRIO TÉCNICO DE ENGENHARIA • RTA ENGENHARIA • DOCUMENTO TÉCNICO\nOFICIAL\nRELATÓRIO TÉCNICO CONSOLIDADO\nDE ENGENHARIA DE PROCESSOS &\nTRANSFORMAÇÃO DIGITAL 4.0\nDiagnóstico Organizacional Integral de Todos os 26 Departamentos e Contratos,\nModelagem AS-IS e TO-BE, Matrizes RACI, Cronoanálise, Auditoria de Riscos, Greenfield\nde RH e Arquitetura M365 Low-Code.\n1.092\nPÁGINAS TÉCNICAS\nCAPÍTULOS\nESTRUTURADOS\nPROCESSOS MAPEADOS\n100%\nENTREGAS CONTRATUAIS\nEste documento consolida a totalidade dos diagnósticos, memórias de cálculo, entrevistas e modelagens validadas\ncom os gestores técnicos e a diretoria da RTA Engenharia. Foram incorporados integralmente todos os 26\ndepartamentos e seus respectivos contratos estaduais e federais (SINFRA-MT, DNIT-MT, DNIT-GO, Escritório de\nProjetos, AGETO, SEDUC, SEOSP, DER-MG, AGEHAB e Consórcio 3S), com capítulo autônomo para Gestão de\nContratos, estruturação greenfield exclusiva de Recursos Humanos (TO-BE), Relatório Executivo de Atuação TSCOPE\ne Referências Bibliográficas (ABNT NBR 6023).\nElaborado por: Tscope • Consultoria e Tecnologia Destinado a: RTA Engenheiros Consultores\n Sumário Geral Analítico • Parte 1\nEstrutura Lógica, Governança, Diagnósticos Estratégicos e Cadernos Administrativos (Páginas 1 a 658) Volume 1\nCap. 01 Acompanhamento das Entregas Contratuais e Cumprimento do Escopo TSCOPE\nDemonstrativo formal dos 12 entregáveis contratuais (Cláusula 2.1) • Metodologia EVM • 100% Concluído Pág. 4 - 5\nCap. 02 Resumo Executivo, Governança Contratual e Metodologia de Mapeamento\nUniverso de 85 colaboradores, 150 reuniões, 17 gestores técnicos e protocolo DMAIC Pág. 6 - 9\nCap. 03 Estudo de Cronoanálise, Eficiência Operacional e Retorno Financeiro (ROI)\nCálculo de Payback (CapEx R$ 30.050,88) • Taxa HH R$ 65,00/h • Custo de Não Agir (COI) Pág. 10 - 13\nCap. 04 Estudo de Cargos, Sobrecarga de Liderança e Key Person Risk\nMapeamento de papéis, gargalos decisórios e descentralização assistida via alçadas digitais Pág. 14 - 19\nCap. 05 Segurança da Informação, LGPD e Gestão de Riscos InfoSec (TI Corporativa)\nAuditoria de tráfego WhatsApp, controle de credenciais, permissões RBAC e conformidade ISO 27001 Pág. 20 - 25\nCap. 06 Shadow IT, Planilhas Paralelas e Pontos Cegos Operacionais\nEliminação de digitação dupla ERP Omie, fricção de context-switching e framework COBIT 2019 Pág. 26 - 31\nCap. 07 Matrizes de Governança (RACI) e Paisagem de Riscos de Negócio\nMatrizes comparativas AS-IS vs. TO-BE, diretrizes ABNT NBR ISO 31000 e framework COSO ERM Pág. 32 - 43\nCap. 08 O Ecossistema Financeiro Global e os 13 Motores de Automação TO-BE\nArquitetura de integração Power Platform, SharePoint Lists, Omie API e Webhooks Pág. 44 - 50\nCap. 09 Caderno Técnico: 55 Processos Centrais de Backoffice Administrativo e Financeiro\nFichas técnicas completas com RACI, Diagnóstico AS-IS, TO-BE e Procedimentos Operacionais (5 pág./processo) Pág. 51 - 328\nCap. 10 Painel de Controle Gerencial • Executive Dashboard em Layout Paisagem\nVisão consolidada dos indicadores macroeconômicos e operacionais do projeto de consultoria Pág. 329\nCap. 11 Governança de Mudança, Comunicação e Capacitação (Change Management)\nFramework Prosci ADKAR, gestão de resistências e plano de capacitação de multiplicadores Pág. 330 - 332\nCap. 12 Anexos Técnicos, Queries SQL e Checklists de Auditoria Contábil\nScripts de validação automatizada de duplicidades e conciliação de fechamento mensal Pág. 333 - 334\nCap. 13 Desenho Macro de Fluxos em Paisagem • BPMN 2.0 Global\nVisualização panorâmica horizontal das esteiras de compras, faturamento, pagamentos e RH Pág. 335 - 352\nCap. 14 Estruturação e Governança da Gestão de Patrimônio (Fixed Assets)\nCiclo de vida de equipamentos, calibração ISO 17025 e tombamento digital de ativos de obras Pág. 353 - 365\nCap. 15 Gestão Estratégica de Contratos, Boletins de Medição e Empenhos Públicos 4.0\nAcompanhamento dos 47 contratos ativos (R$ 753M em carteira), DRE por contrato e curvas de avanço Pág. 366 - 383\nCap. 16 Gestão de Contratos: Caderno Técnico de Operação • 27 Processos Homologados\nMapeamento, RACI, Poka-Yokes e fluxos de medição, seguros, notas e conciliação (P01-81 a P27-81) Pág. 384 - 411\nCap. 17 Operações Técnicas: Controle Tecnológico, Ambiental, Verificador e SINFRA-MT\nSupervisão de campo, ensaios geotécnicos, gestão socioambiental e laudos periciais (37 Processos) Pág. 412 - 458\nCap. 18 Departamento Administrativo (ADM): Rotinas Centrais de Backoffice\nFaturamento, protocolo, secretaria e conciliação administrativa central Pág. 459 - 470\nCap. 19 Setor GERAL & Suporte Corporativo Transversal\nApoio a contratos, comunicação com regionais, suprimentos e infraestrutura de TI Pág. 471 - 486\nCap. 20 Áreas Administrativas Integradas: Deep Dives Departamentais\nFrota, Financeiro, Compras, Secretaria, AGEHAB e Gestão de Patrimônio (Laudos Individuais) Pág. 487 - 658\nRTA Engenharia • Relatório Técnico Consolidado • Documento Técnico Oficial Página 2 de Sumário • Volume 1 (Páginas 1 a 658)\n Sumário Geral Analítico • Parte 2\nContratos Regionais, Especialidades Técnicas, Cadernos Especiais e Referências (Páginas 659 a 1.092) Volume 2\nCap. 21 Áreas Técnicas de Engenharia: Vistorias, Fiscalização e Geotecnia\nLaboratório geotécnico, controle de asfalto/concreto, Intervia e acervo técnico Pág. 659 - 697\nCap. 22 Recursos Humanos & Gente e Gestão (Novo Departamento Criado do Zero)\nEstruturação greenfield sem AS-IS prévio • Modelo 100% TO-BE (12 Processos: R&S, Admissão, Folha) Pág. 698 - 710\nCap. 23 Célula de Concorrências Públicas e Licitações (Lei 14.133/2021)\nEngenharia regulatória, acervo técnico, propostas comerciais e editais (5 Processos) Pág. 711 - 725\nCap. 24 Engenharia Geotécnica & Controle Tecnológico de Pavimentação\nEnsaios de campo, laboratoriais, laudos e rastreabilidade metrológica rodoviária Pág. 726 - 745\nCap. 25 Contrato SEOSP (Rondônia) • Gestão Integrada e Supervisão de Obras\n8 Processos: CIS Edificações, CSB Saneamento, Convênios e Licenciamento SEDAM Pág. 746 - 767\nCap. 26 Contrato DER-MG (Minas Gerais) • Supervisão da Malha e Drenagem\n5 Processos: Filmagem contínua, coletores móveis e diários de obra RDO em 8 regionais Pág. 768 - 783\nCap. 27 Contrato AGETO (Tocantins) • Supervisão Rodoviária Estadual\nMemória técnica exaustiva: 9 macroprocessos, ordens de serviço, medições e produtos P1 a P8 Pág. 784 - 835\nCap. 28 Contrato DNIT-MT • Supervisão e Apoio Rodoviário Federal\n7 Processos: Fiscalização de rodovias federais no MT, boletins BM e sistema SEI Pág. 836 - 867\nCap. 29 Contrato DNIT-GO • Supervisão e Apoio Rodoviário Federal Goiás\n11 Processos: Protocolo SEI, fiscalização de campo, medição BM e gestão contratual Pág. 868 - 891\nCap. 30 Escritório de Projetos • Engenharia Consultiva Multicontratos\n9 Processos: Compatibilização BIM, orçamentação SINAPI, validação técnica e homologação Pág. 892 - 908\nCap. 31 Contrato SEDUC • Fiscalização e Gerenciamento Escolar\n7 Processos: Engenharia de fiscalização predial, gestão de termos e conferência documental Pág. 909 - 937\nCap. 32 Consórcio 3S (SINFRA-MT) • Obras de Arte Especiais (Pontes de Aço/Concreto)\n10 Processos: Supervisão de projetos estruturais, pontes, vistorias e aprovações Pág. 938 - 961\nCap. 33 Caderno Executivo BPMN 2.0 TO-BE & Automações M365 (Esteiras Otimizadas)\nMapeamento descritivo passo a passo com síntese operacional, regras Poka-Yoke e taxonomia Pág. 962 - 1.058\nCap. 34 Caderno Especial: Cargos, Atribuições e Sobrecarga 10X\nErgonomia operacional, sobrecarga de papéis e descentralização da liderança\nPág. 1.059 -\n1.068\nCap. 35 Caderno Especial: Cronoanálise, Tempos e Movimentos 10X\nTempos de ciclo, desperdícios de Taylor/Fayol e decomposição horária de rotinas\nPág. 1.069 -\n1.078\nCap. 36 Caderno Especial: Shadow IT e Pontos Cegos de Governança 10X (TI)\nVarredura de controles informais, riscos de integridade e consolidação de silos de dados\nPág. 1.079 -\n1.088\nCap. 37 Capítulo Síntese: Visão Departamental Unificada dos 225 Processos\nMatriz de amarração de todos os 26 setores da RTA, fluxos de interface, RACI e transferências Pág. 1.089\nCap. 38 Relatório Executivo de Atuação da Consultoria TSCOPE\nPrestação de contas do ciclo de 12 semanas, cumprimento dos 12 entregáveis e roadmap por ondas\nPág. 1.090 -\n1.092\nAnexo Referências Bibliográficas, Normativas e Acadêmicas (ABNT NBR 6023)\nFundamentação em Engenharia Econômica, BPR, Lean Six Sigma, ISO 31000 e BPMN 2.0 Pág. 1.093\nRTA Engenharia • Relatório Técnico Consolidado • Documento Técnico\nOficial\nPágina 3 de Sumário • Volume Completo Oficial (1.093 Páginas • 26\nDepartamentos)\n Capítulo 01 • Acompanhamento e Cumprimento do Escopo Contratual\nMatriz de Conformidade dos Entregáveis Formais de Engenharia de Processos (Cláusula 2.1 e 2.2 do Contrato RTA x TSCOPE)\n Objeto e Base Jurídica de Execução\nEm estrita conformidade com o Contrato de Prestação de Serviços Técnicos Especializados de Engenharia de Processos e\nTransformação Organizacional (Cláusula 2.1 e Cláusula 6.5.1), a TSCOPE estruturou o presente plano de ação com o objetivo de\nexecutar o diagnóstico integral, mapeamento AS-IS, proposição de fluxos TO-BE, estudos de cronoanálise, matrizes RACI,\ncuradoria tecnológica e capacitação das equipes operacionais da RTA Engenharia.\nITEM\nCONTRATUAL\nENTREGÁVEL PREVISTO EM\nCONTRATO\nMETODOLOGIA EXECUTADA E EVIDÊNCIAS\nAPRESENTADAS NO DOSSIÊ STATUS FINAL\nItem 2.1.1 Fluxograma Atual (AS-IS) Mapeamento exaustivo de 225 processos em notação\nBPMN 2.0 com registro de dores, gargalos e sistemas\nutilizados.\n✓ Concluído\nItem 2.1.2 Fluxograma Macro das Áreas RTA Visão consolidada de processos interconectando os\ndepartamentos da empresa\n✓ Concluído\nItem 2.1.3 Estudo de Tempos e Movimentos Cronoanálise analítica baseada em Taylor/Fayol e DMAIC,\ncumprindo a meta contratual de identificação inicial de\n650h+/mês e consolidando um potencial de ~1.744h/mês\nde eficiência de backoffice nos 225 processos\nmapeados, sob a metodologia de teto por criticidade\n(impacto econômico estimado de R$ 113.360/mês).\n✓ Concluído\nItem 2.1.4 Proposição de Fluxograma\nOtimizado (TO-BE)\nRedesenho com portas lógicas paramétricas (Poka Yoke),\nautomação de rotinas repetitivas e integração com M365.\nApresentação de propostas de melhoria/automações em\ngeral.\n✓ Concluído\nItem 2.1.5 Matriz RACI de\nResponsabilidades\nMatriz comparativa AS-IS vs. TO-BE rebalanceando\npapéis operacionais e alçadas decisórias.\n✓ Concluído\nItem 2.1.6 Cargos e Atribuições Diagnóstico ergonômico de sobrecarga de liderança,\nriscos de pessoa-chave (Key Person Risk) e plano de\ndelegação.\n✓ Concluído\nRTA Engenheiros Consultores • Acompanhamento de Entregas Contratuais Página 4 • Relatório consolidado\n1. Resumo Executivo e Metodologia de Mapeamento\nDiagnóstico Corporativo, Arquitetura de Processos e Entregas Estruturantes da Consultoria Página 6\nO Panorama Executivo: Foram mapeados e estruturados 225 processos da RTA Engenheiros Consultores, cobrindo a totalidade\ndos 26 departamentos administrativos, operacionais e contratos regionais. O diagnóstico identificou pontos de atrito que\nimpactavam a produtividade, tais como dependência de comunicação não estruturada por e-mail, controles manuais\ndescentralizados em planilhas locais, redundâncias de conferência, ausência de travas preventivas sistemáticas (Poka Yoke),\nbusca por informação em plataformas de terceiros (acesso recorrente a sistemas governamentais com logins externos à\norganização para localizar dados desorganizados e sem avisos prévios de atualização) e falta de padronização nos softwares de\ncoleta de dados em campo (ferramentas legadas com limitações técnicas, falhas de sincronização, travamentos no upload de\narquivos e preenchimentos incompletos).\nA reengenharia dos fluxos de trabalho da RTA fundamenta-se nos preceitos da Engenharia de Processos Lean e na modelagem\nformal em notação internacional BPMN 2.0. As soluções concebidas visam proteger o fluxo de caixa corporativo, proteção\ncontra vazamentos de dados, fraudes operacionais e redundâncias de digitação de dados, assegurando conformidade fiscal,\nrastreabilidade documental integral e padronização operacional em todas as frentes de atuação da empresa.\nAlém do inventário completo de fluxos operacionais, o projeto executou entregas estruturantes que incluem: a construção da\nMatriz RACI comparativa (AS-IS vs. TO-BE), o diagnóstico de alçadas decisórias e sobrecarga técnica, o mapeamento de riscos\ncorporativos segundo diretrizes da ISO 31000 e COSO ERM, a curadoria de arquitetura tecnológica centrada em integrações via\nAPI com o Omie ERP, a prototipação de esteiras digitais no ecossistema Microsoft 365 com bibliotecas estruturadas em\nSharePoint e orquestração de tarefas no Microsoft Planner, bem como a homologação do Projeto Piloto Funcional com o\ndesenvolvimento e estruturação da Intranet Corporativa da RTA no Microsoft SharePoint.\nFundamentação Teórica, Acadêmica e Referenciais Normativos\nO diagnóstico do modelo AS-IS legado evidenciou que a divisão funcional das atividades na organização produziu ilhas de\nconhecimento e fragmentação operacional. Segundo Davenport (Process Innovation, 1993), a busca de eficiência isolada por\npostos individuais atinge limites rígidos quando as interfaces e transferências de responsabilidade (handoffs) permanecem\nmanuais e desprovidas de integração de sistemas. A abordagem TO-BE adota os princípios de redesenho transversal\npreconizados por Hammer & Champy (Reengineering the Corporation, 1993), reorientando a execução em torno dos fluxos de",
+  "projeto_info": {
+    "titulo": "RELATÓRIO TÉCNICO CONSOLIDADO DE ENGENHARIA DE PROCESSOS & TRANSFORMAÇÃO DIGITAL 4.0",
+    "organizacao": "RTA Engenheiros Consultores",
+    "abrangencia": "26 Departamentos Corporativos e Contratos Regionais (SINFRA-MT, DNIT-MT, DNIT-GO, AGETO, SEDUC, SEOSP, DER-MG, AGEHAB e Consórcio 3S)",
+    "processos_totais": 225,
+    "consultoria": "TSCOPE - Consultoria e Tecnologia",
+    "paginas": 1124,
+    "versao_mestre": "v122 corrigido final homologado (Outubro/2026)",
+    "marcos_comerciais": "G01 a G10",
+    "marcos_tecnicos": "M01 a M18 (18 Cadernos Departamentais)"
+  }
+}
