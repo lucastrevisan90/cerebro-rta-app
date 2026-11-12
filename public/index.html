@@ -36,7 +36,6 @@
             overflow: hidden;
         }
 
-        /* Top Header */
         header {
             height: 70px;
             background: rgba(19, 27, 46, 0.85);
@@ -102,7 +101,6 @@
             50% { opacity: 0.4; transform: scale(0.85); }
         }
 
-        /* Layout Grid */
         .workspace {
             display: flex;
             flex: 1;
@@ -110,7 +108,6 @@
             overflow: hidden;
         }
 
-        /* Sidebar Context */
         aside {
             width: 340px;
             background: var(--bg-card);
@@ -178,7 +175,6 @@
             transform: translateX(4px);
         }
 
-        /* Main Chat Area */
         main {
             flex: 1;
             display: flex;
@@ -265,16 +261,7 @@
         }
         .msg-bubble li { margin-bottom: 6px; }
         .msg-bubble strong { color: #F8FAFC; }
-        .msg-bubble code {
-            background: rgba(0,0,0,0.3);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12.5px;
-            color: #38BDF8;
-        }
 
-        /* Input Bar */
         .input-bar-container {
             padding: 20px 40px;
             background: rgba(19, 27, 46, 0.7);
@@ -337,7 +324,6 @@
             cursor: not-allowed;
         }
 
-        /* Typing indicator */
         .typing {
             display: flex;
             gap: 5px;
@@ -372,33 +358,29 @@
             <div class="badge-pill">RTA × TSCOPE</div>
             <div class="header-title">
                 <h1>Cérebro Digital do Projeto RTA</h1>
-                <p>IA Especialista em Diagnóstico Operacional, Cadernos e Entregáveis</p>
+                <p>IA Especialista em Diagnóstico Operacional, Processos e Entregáveis</p>
             </div>
         </div>
         <div class="status-indicator">
             <div class="status-dot"></div>
-            <span>Gemini 1.5 Flash • Contexto Ativo</span>
+            <span>Assistente Online</span>
         </div>
     </header>
 
     <div class="workspace">
         <aside>
             <div class="context-box">
-                <h3>Base de Conhecimento</h3>
-                <div class="context-stat">
-                    <span>Relatório Mestre v122:</span>
-                    <span>1.124 págs</span>
-                </div>
+                <h3>Escopo Mapeado</h3>
                 <div class="context-stat">
                     <span>Departamentos & Contratos:</span>
                     <span>26 áreas</span>
                 </div>
                 <div class="context-stat">
-                    <span>Processos Mapeados:</span>
+                    <span>Processos Catalogados:</span>
                     <span>225 rotinas</span>
                 </div>
                 <div class="context-stat">
-                    <span>Cadernos Departamentais:</span>
+                    <span>Cadernos de Entregas:</span>
                     <span>18 cadernos</span>
                 </div>
                 <div class="context-stat">
@@ -412,13 +394,13 @@
             </div>
 
             <div class="context-box">
-                <h3>Perguntas Rápidas</h3>
+                <h3>Perguntas Frequentes</h3>
                 <div class="quick-queries">
-                    <button class="quick-btn" onclick="sendQuick('O que o Relatório Consolidado v122 diz sobre as rotinas e gargalos do setor de compras?')">🛒 O que o v122 diz sobre Compras?</button>
-                    <button class="quick-btn" onclick="sendQuick('Quais são os principais desafios do setor de Frotas e como a Cobli será integrada?')">🚗 Frotas, Combustível e Telemetria Cobli</button>
-                    <button class="quick-btn" onclick="sendQuick('Qual é o diagnóstico e o que será automatizado no Financeiro e Contas a Pagar (M04)?')">💰 Automação do Financeiro e Omie (M04)</button>
-                    <button class="quick-btn" onclick="sendQuick('Como o relatório trata a supervisão rodoviária federal DNIT-MT e DNIT-GO?')">🛣️ Contratos DNIT-MT (M15) e DNIT-GO (M16)</button>
-                    <button class="quick-btn" onclick="sendQuick('Quem é o gestor do Caderno 08 (RH) e quais processos estão mapeados nele?')">👥 Caderno 08 - Recursos Humanos (RH)</button>
+                    <button class="quick-btn" onclick="sendQuick('Quais são as principais melhorias e automações previstas para o setor de Compras?')">🛒 O que está previsto para Compras?</button>
+                    <button class="quick-btn" onclick="sendQuick('Como funcionará a telemetria da Cobli para controle de frota e combustível?')">🚗 Frotas e Telemetria Cobli</button>
+                    <button class="quick-btn" onclick="sendQuick('Como a automação do Financeiro e Contas a Pagar se integra ao Omie?')">💰 Automação do Financeiro e Omie</button>
+                    <button class="quick-btn" onclick="sendQuick('Quais são as entregas para a supervisão rodoviária do DNIT-MT e DNIT-GO?')">🛣️ Contratos DNIT-MT e DNIT-GO</button>
+                    <button class="quick-btn" onclick="sendQuick('O que prevê o plano de ação e processos para o departamento de Recursos Humanos?')">👥 Recursos Humanos (RH)</button>
                 </div>
             </div>
         </aside>
@@ -428,15 +410,16 @@
                 <div class="msg-row bot">
                     <div class="avatar">IA</div>
                     <div class="msg-bubble">
-                        Olá! Sou o <b>Cérebro Digital do Projeto RTA</b>, alimentado com a totalidade do <b>Relatório Técnico Consolidado v122 (1.124 páginas)</b>, o <b>Relatório Interativo v120</b>, os <b>18 Cadernos Departamentais</b> e a <b>Matriz de Execução Granular com 225 processos mapeados</b>.<br><br>
-                        Como posso ajudar você hoje com dúvidas sobre escopo, gargalos diagnosticados, integrações (Omie, Cobli, SEI), responsáveis ou entregáveis da sua área?
+                        Olá! Sou o <b>Cérebro Digital do Projeto RTA</b>, assistente inteligente desenvolvido pela <b>Tscope</b>.<br><br>
+                        Estou à disposição para responder qualquer dúvida sobre os diagnósticos operacionais, processos mapeados, integrações sistêmicas (Omie, Cobli, SEI) e entregáveis da sua área.<br><br>
+                        Como posso ajudar você hoje?
                     </div>
                 </div>
             </div>
 
             <div class="input-bar-container">
                 <div class="input-wrapper">
-                    <input type="text" id="userInput" placeholder="Faça uma pergunta sobre qualquer detalhe do relatório de +1000 páginas, caderno ou processo..." onkeydown="handleKey(event)">
+                    <input type="text" id="userInput" placeholder="Digite sua pergunta sobre processos, departamentos ou entregas..." onkeydown="handleKey(event)">
                     <button class="send-btn" id="sendBtn" onclick="sendMessage()">
                         <span>Enviar</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
@@ -552,4 +535,3 @@
     </script>
 </body>
 </html>
-
