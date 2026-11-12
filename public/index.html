@@ -37,6 +37,118 @@
             overflow: hidden;
         }
 
+        /* Modal de Autenticação */
+        #authOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(11, 17, 30, 0.94);
+            backdrop-filter: blur(16px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .auth-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glow);
+            border-radius: 20px;
+            padding: 36px 32px;
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .auth-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(37, 99, 235, 0.15);
+            border: 1px solid var(--border-glow);
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #60A5FA;
+            margin-bottom: 20px;
+        }
+
+        .auth-card h2 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: #FFFFFF;
+        }
+
+        .auth-card p {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .auth-input-wrapper {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .auth-input-wrapper input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            padding: 14px 16px;
+            color: #FFFFFF;
+            font-size: 15px;
+            outline: none;
+            transition: all 0.2s;
+            text-align: center;
+            letter-spacing: 2px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .auth-input-wrapper input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .auth-btn {
+            width: 100%;
+            background: var(--primary);
+            color: #FFFFFF;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 14.5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .auth-btn:hover {
+            background: #1D4ED8;
+            transform: scale(1.02);
+        }
+
+        .auth-error {
+            color: #F87171;
+            font-size: 12.5px;
+            margin-top: 12px;
+            display: none;
+        }
+
+        /* Top Header */
         header {
             height: 70px;
             background: rgba(19, 27, 46, 0.85);
@@ -79,6 +191,12 @@
             color: var(--text-muted);
         }
 
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
         .status-indicator {
             display: flex;
             align-items: center;
@@ -100,6 +218,26 @@
         @keyframes pulse {
             0%, 100% { opacity: 1; transform: scale(1); }
             50% { opacity: 0.4; transform: scale(0.85); }
+        }
+
+        .lock-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-glass);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .lock-btn:hover {
+            color: #FFFFFF;
+            background: rgba(239, 68, 68, 0.2);
+            border-color: rgba(239, 68, 68, 0.4);
         }
 
         .workspace {
@@ -371,6 +509,22 @@
 </head>
 <body>
 
+    <!-- Overlay de Senha -->
+    <div id="authOverlay">
+        <div class="auth-card">
+            <div class="auth-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h2>Acesso Restrito</h2>
+            <p>Digite a senha de acesso para consultar o Cérebro Digital do Projeto RTA.</p>
+            <div class="auth-input-wrapper">
+                <input type="password" id="passwordInput" placeholder="••••••" onkeydown="if(event.key==='Enter') verifyPassword()">
+            </div>
+            <button class="auth-btn" onclick="verifyPassword()">Entrar no Sistema</button>
+            <div class="auth-error" id="authError">Senha incorreta. Verifique e tente novamente.</div>
+        </div>
+    </div>
+
     <header>
         <div class="header-brand">
             <div class="badge-pill">RTA × TSCOPE</div>
@@ -379,9 +533,15 @@
                 <p>IA Especialista em Diagnóstico Operacional, Processos e Entregáveis</p>
             </div>
         </div>
-        <div class="status-indicator">
-            <div class="status-dot"></div>
-            <span>Assistente Online</span>
+        <div class="header-right">
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>Assistente Online</span>
+            </div>
+            <button class="lock-btn" onclick="lockAccess()" title="Bloquear sessão">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Bloquear</span>
+            </button>
         </div>
     </header>
 
@@ -440,12 +600,48 @@
     </div>
 
     <script>
+        const authOverlay = document.getElementById('authOverlay');
+        const passwordInput = document.getElementById('passwordInput');
+        const authError = document.getElementById('authError');
         const chatBox = document.getElementById('chatBox');
         const userInput = document.getElementById('userInput');
         const sendBtn = document.getElementById('sendBtn');
         const abortBtn = document.getElementById('abortBtn');
+        
         let chatHistory = [];
         let currentAbortController = null;
+        let userPassword = sessionStorage.getItem('rta_pwd') || '';
+
+        // Verificar se já autenticou na sessão
+        if (userPassword === '102030') {
+            authOverlay.style.display = 'none';
+        } else {
+            authOverlay.style.display = 'flex';
+            setTimeout(() => passwordInput.focus(), 150);
+        }
+
+        function verifyPassword() {
+            const entered = passwordInput.value.trim();
+            if (entered === '102030') {
+                userPassword = entered;
+                sessionStorage.setItem('rta_pwd', entered);
+                authOverlay.style.display = 'none';
+                userInput.focus();
+            } else {
+                authError.style.display = 'block';
+                passwordInput.value = '';
+                passwordInput.focus();
+            }
+        }
+
+        function lockAccess() {
+            sessionStorage.removeItem('rta_pwd');
+            userPassword = '';
+            authError.style.display = 'none';
+            authOverlay.style.display = 'flex';
+            passwordInput.value = '';
+            passwordInput.focus();
+        }
 
         function appendMessage(role, text) {
             const row = document.createElement('div');
@@ -537,26 +733,31 @@
                     signal: currentAbortController.signal,
                     body: JSON.stringify({
                         message: text,
-                        history: chatHistory
+                        history: chatHistory,
+                        password: userPassword
                     })
                 });
 
                 const data = await res.json();
                 hideTyping();
 
+                if (res.status === 401) {
+                    lockAccess();
+                    authError.style.display = 'block';
+                    authError.innerText = 'Sessão expirada ou senha incorreta. Digite novamente.';
+                    return;
+                }
+
                 if (res.ok && data.reply) {
                     appendMessage('bot', data.reply);
                     chatHistory.push({ role: 'user', text: text });
                     chatHistory.push({ role: 'model', text: data.reply });
                 } else {
-                    appendMessage('bot', '⚠️ **Erro:** ' + (data.error || 'Não foi possível obter resposta. Verifique a chave GEMINI_API_KEY.'));
+                    appendMessage('bot', '⚠️ **Erro:** ' + (data.error || 'Não foi possível obter resposta.'));
                 }
             } catch (err) {
                 hideTyping();
-                if (err.name === 'AbortError') {
-                    // Abortado intencionalmente
-                    return;
-                }
+                if (err.name === 'AbortError') return;
                 appendMessage('bot', '⚠️ **Erro de conexão:** ' + err.message);
             } finally {
                 setGenerating(false);
