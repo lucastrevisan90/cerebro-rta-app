@@ -14,13 +14,15 @@ try {
   console.error("Erro ao carregar base de conhecimento:", e);
 }
 
+const ACCESS_PASSWORD = process.env.ACCESS_PASSWORD || "102030";
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
   res.setHeader(
     'Access-Control-Allow-Headers',
-    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization'
   );
 
   if (req.method === 'OPTIONS') {
@@ -32,7 +34,13 @@ module.exports = async (req, res) => {
     return res.status(405).json({ error: 'Método não permitido. Use POST.' });
   }
 
-  const { message, history } = req.body || {};
+  const { message, history, password } = req.body || {};
+
+  // Validação de Senha de Acesso
+  if (!password || password !== ACCESS_PASSWORD) {
+    return res.status(401).json({ error: 'Acesso não autorizado. Senha incorreta.' });
+  }
+
   if (!message) {
     return res.status(400).json({ error: 'Mensagem vazia.' });
   }
