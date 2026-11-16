@@ -43,7 +43,7 @@ async function fetchRtaPortalData() {
   }
 
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 5000);
+  const timeoutId = setTimeout(() => controller.abort(), 10000);
 
   try {
     const resp = await fetch(RTA_PORTAL_URL, {
