@@ -21,6 +21,106 @@ try {
 }
 
 const ACCESS_PASSWORD = process.env.ACCESS_PASSWORD || "102030";
+const RTA_PORTAL_URL = 'https://tscope.com.br/api/integrations/rta/projects';
+const PORTAL_CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutos
+
+let portalCache = {
+  data: null,
+  fetchedAt: 0
+};
+
+/**
+ * Busca e compacta os dados de cronograma, marcos e atualizações do portal tscope.com.br.
+ * Usa cache em memória de 5 minutos para manter respostas rápidas e atualizadas.
+ */
+async function fetchRtaPortalData() {
+  const integrationKey = process.env.RTA_INTEGRATION_API_KEY;
+  if (!integrationKey) return null;
+
+  const now = Date.now();
+  if (portalCache.data && (now - portalCache.fetchedAt) < PORTAL_CACHE_TTL_MS) {
+    return portalCache.data;
+  }
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+  try {
+    const resp = await fetch(RTA_PORTAL_URL, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${integrationKey}`,
+        'Accept': 'application/json'
+      },
+      signal: controller.signal
+    });
+    clearTimeout(timeoutId);
+
+    if (!resp.ok) {
+      console.warn(`Portal RTA retornou status ${resp.status}`);
+      return portalCache.data;
+    }
+
+    const raw = await resp.json();
+    const projects = Array.isArray(raw?.projects) ? raw.projects : [];
+
+    const compacted = {
+      referenceDate: raw?.referenceDate || null,
+      projects: projects.map(p => {
+        const groupMap = {};
+        (p.groups || []).forEach(g => {
+          if (g && g.id) groupMap[g.id] = g.name;
+        });
+
+        const tasks = (p.tasks || [])
+          .filter(t => !t.deleted)
+          .map(t => ({
+            grupo: groupMap[t.groupId] || null,
+            nome: t.name,
+            responsavel: t.owner || null,
+            inicioPrevisto: t.plannedStart || null,
+            fimPrevisto: t.plannedEnd || null,
+            inicioReal: t.actualStart || null,
+            fimReal: t.actualEnd || null,
+            progresso: t.progress ?? 0,
+            status: t.status || null,
+            marcos: (t.measurement?.milestones || []).map(m => ({
+              nome: m.name,
+              peso: m.weight,
+              aceito: !!m.accepted,
+              aceitoEm: m.acceptedAt || null
+            }))
+          }));
+
+        const events = (p.events || []).slice(0, 10).map(e => ({
+          data: e.created_at || null,
+          tipo: e.kind || null,
+          titulo: e.title || null,
+          descricao: e.body || null,
+          autor: e.actor || null
+        }));
+
+        return {
+          codigo: p.projectCode,
+          nome: p.projectName,
+          status: p.status,
+          inicio: p.projectStart,
+          fim: p.projectEnd,
+          atualizadoEm: p.updatedAt,
+          tarefas: tasks,
+          atualizacoesRecentes: events
+        };
+      })
+    };
+
+    portalCache = { data: compacted, fetchedAt: now };
+    return compacted;
+  } catch (err) {
+    clearTimeout(timeoutId);
+    console.warn("Falha ao consultar portal RTA:", err.message);
+    return portalCache.data;
+  }
+}
 
 // Modelos modernos da família Gemini com suporte ativo no Free Tier do Google AI Studio
 const CANDIDATE_MODELS = [
@@ -160,7 +260,14 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const projectContext = buildEnrichedProjectContext(knowledgeBase);
+    const [projectContext, portalData] = await Promise.all([
+      Promise.resolve(buildEnrichedProjectContext(knowledgeBase)),
+      fetchRtaPortalData()
+    ]);
+
+    const portalSection = portalData
+      ? `\nCRONOGRAMA, MARCOS E ATUALIZAÇÕES EM TEMPO REAL (PORTAL DO CLIENTE - DATA DE REFERÊNCIA: ${portalData.referenceDate || 'atual'}):\nUse estes dados ao vivo para responder perguntas sobre datas, prazos, progresso, responsáveis, marcos aceitos/pendentes e atualizações recentes dos projetos G01 a G10:\n${JSON.stringify(portalData)}\n`
+      : '';
 
     const systemPrompt = `Você é o Cérebro Digital do Projeto RTA, assistente inteligente desenvolvido pela consultoria TSCOPE para a RTA Engenharia.
 Responda diretamente em português brasileiro aos diretores, gerentes técnicos e colaboradores da RTA Engenharia.
@@ -183,7 +290,7 @@ DIRETRIZES FUNDAMENTAIS DE SIGILO INDUSTRIAL E PRIVACIDADE DA TSCOPE:
 
 BASE OFICIAL DE CONHECIMENTO DO PROJETO RTA:
 ${JSON.stringify(projectContext, null, 1)}
-`;
+${portalSection}`;
 
     const contents = [];
 
